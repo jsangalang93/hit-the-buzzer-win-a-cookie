@@ -1,12 +1,15 @@
 // V buttonElement is your element on JS query slecting bigButton class in css
 
 const buttonElement = document.getElementById("bigButton");
-const winCookieElement = 'You win a cookie!'
-    
+const winCookieElement = 'HA-CHA! You win a cookie!'
+const cookieDisplayElement = document.getElementById("cookieDisplay")
 
-buttonElement.addE
 
 buttonElement.addEventListener('click', () => {
-    winCookieElement.textContent = buttonElement
+    cookieDisplayElement.textContent = winCookieElement
     console.log('you win a cookie! Congratulations!');
 }) 
+
+
+
+

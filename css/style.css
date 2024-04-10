@@ -11,8 +11,18 @@ h1 {
     text-align: center;
 }
 
+#cookieDisplay {
+    font-family: 'bangers';
+    font-size: 40px;
+    margin-top: 20px;
+}
+
 #bigButton {
 
+}
+
+a {
+    font-family: 'bangers'
 }
 
 button {

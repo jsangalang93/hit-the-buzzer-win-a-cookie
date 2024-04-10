@@ -1,0 +1,23 @@
+body {
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: "bangers";
+    color: white;
+    font-size: 75px;
+    text-align: center;
+}
+
+bigButton {
+
+}
+
+button {
+    background-color: red;
+    height:100px;
+    width: 100px;
+    border-radius: 50px;
+}

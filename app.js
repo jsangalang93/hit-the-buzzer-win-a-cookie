@@ -4,7 +4,7 @@ const buttonElement = document.getElementById("bigButton");
 const winCookieElement = 'Ha-Cha! You win a cookie!'
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
- const ding = new Audio("../MouseClick_SFXB.1441.wav")
+const ding = new Audio("../MouseClick_SFXB.1441.wav")
 
 let counterElement = 0;
 
@@ -14,10 +14,9 @@ buttonElement.addEventListener('click', () => {
     cookieDisplayElement.textContent = winCookieElement;
 
     // sound byte for button
-    
     ding.volume = .5
     ding.play()
-    console.log(ding.play())
+    
 
 // cookie counter
         counterElement = counterElement + 1

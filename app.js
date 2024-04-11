@@ -6,6 +6,7 @@ const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
 const ding = new Audio("../MouseClick.wav")
 const backgroundElement = document.querySelector(".background")
+const CookiePop = document.querySelector(".cookieGrid")
 
 let counterElement = 0;
 
@@ -20,12 +21,13 @@ buttonElement.addEventListener('click', () => {
     
     // cookie counter
     counterElement = counterElement + 1
-        console.log(counterElement);
+        // console.log(counterElement);
     
-    const cookieUpdateElement = `you currently have ${counterElement} cookies. Which cookie would you like this time around?`
+    const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     counterDisplayElement.textContent = cookieUpdateElement;
 
     // cookie popup
+
 
 
 

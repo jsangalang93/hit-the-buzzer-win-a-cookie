@@ -2,7 +2,7 @@ body {
     background: black;
     text-align: center;
     color: white;
-    background-image:url()" ;
+    
 }
 
 h1 {
@@ -36,4 +36,13 @@ button {
 .counter {
     font-family: 'bangers';
     
+}
+
+.cookieGrid {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+
 }

@@ -14,7 +14,7 @@ buttonElement.addEventListener('click', () => {
     cookieDisplayElement.textContent = winCookieElement;
 
     // sound byte for button
-    ding.volume = .5
+    ding.volume = 1
     ding.play()
     
 

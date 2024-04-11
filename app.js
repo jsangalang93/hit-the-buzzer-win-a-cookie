@@ -4,7 +4,7 @@ const buttonElement = document.getElementById("bigButton");
 const winCookieElement = 'Ha-Cha! You win a cookie!'
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
-const ding = new Audio("")
+ const ding = new Audio("../MouseClick_SFXB.1441.wav")
 
 let counterElement = 0;
 
@@ -13,9 +13,11 @@ let counterElement = 0;
 buttonElement.addEventListener('click', () => {
     cookieDisplayElement.textContent = winCookieElement;
 
-// sound byte for button
-    ding.volume = .05
+    // sound byte for button
+    
+    ding.volume = .5
     ding.play()
+    console.log(ding.play())
 
 // cookie counter
         counterElement = counterElement + 1
@@ -23,8 +25,23 @@ buttonElement.addEventListener('click', () => {
     
     const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     counterDisplayElement.textContent = cookieUpdateElement;
+
+// cookie popup
+
+
+
 }) 
 
+// cookie image pop up
+
+
+
+// sound byte for button
+    
+    // ding.volume = .05
+    // ding.play()
+
+// cookie counter
 
 
 

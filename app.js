@@ -4,7 +4,7 @@ const buttonElement = document.getElementById("bigButton");
 const winCookieElement = 'Ha-Cha! You win a cookie!'
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
-const ding = new Audio("../MouseClick_SFXB.1441.wav")
+const ding = new Audio("../MouseClick.wav")
 
 let counterElement = 0;
 

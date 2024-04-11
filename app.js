@@ -1,21 +1,23 @@
 // V buttonElement is your element on JS query slecting bigButton class in css
 
 const buttonElement = document.getElementById("bigButton");
-const winCookieElement = 'You win a cookie!'
+const winCookieElement = 'Ha-Cha! You win a cookie!'
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
+const ding = new Audio("")
 
-// const counterElementOutput = cookieCounterElement
 let counterElement = 0;
 
 
 //output, you win a cookie 
 buttonElement.addEventListener('click', () => {
-    // let counterElement = 0;
     cookieDisplayElement.textContent = winCookieElement;
-    //^ console.log('you win a cookie! Congratulations!')
 
-    //v cookie counter
+// sound byte for button
+    ding.volume = .05
+    ding.play()
+
+// cookie counter
         counterElement = counterElement + 1
             console.log(counterElement);
     

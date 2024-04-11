@@ -9,12 +9,15 @@ h1 {
     color: white;
     font-size: 75px;
     text-align: center;
+    margin: 0 auto;
+
 }
 
 #cookieDisplay {
     font-family: 'bangers';
     font-size: 40px;
     margin-top: 20px;
+    
 }
 
 a {
@@ -26,8 +29,10 @@ button {
     height:100px;
     width: 100px;
     border-radius: 50px;
+    margin: 20px;
 }
 
 .counter {
     font-family: 'bangers';
+    
 }

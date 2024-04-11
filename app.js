@@ -5,6 +5,7 @@ const winCookieElement = 'Ha-Cha! You win a cookie!'
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
 const ding = new Audio("../MouseClick.wav")
+const backgroundElement = document.querySelector(".background")
 
 let counterElement = 0;
 
@@ -17,15 +18,14 @@ buttonElement.addEventListener('click', () => {
     ding.volume = 1
     ding.play()
     
-
-// cookie counter
-        counterElement = counterElement + 1
-            console.log(counterElement);
+    // cookie counter
+    counterElement = counterElement + 1
+        console.log(counterElement);
     
-    const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+    const cookieUpdateElement = `you currently have ${counterElement} cookies. Which cookie would you like this time around?`
     counterDisplayElement.textContent = cookieUpdateElement;
 
-// cookie popup
+    // cookie popup
 
 
 

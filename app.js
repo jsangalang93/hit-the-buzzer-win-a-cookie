@@ -61,7 +61,7 @@ eatElement.addEventListener('click', () => {
     const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     if (counterElement <= 11 && counterElement >= 0){
     counterElement = counterElement - 1
-    cookieDisplayElement.textContent = `mmmmmm Hope you enjoyed!`
+    cookieDisplayElement.textContent = `mmmmm Hope you enjoyed!`
             counterDisplayElement.textContent = cookieUpdateElement;
             munch.volume = 1
             munch.play()

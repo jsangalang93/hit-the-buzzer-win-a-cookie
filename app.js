@@ -42,16 +42,6 @@ buttonElement.addEventListener('click', () => {
         }else{
             buttonElement.removeEventListener('click', buttonElement)
             diabetesElement.textContent = 'You seem to have a lot on your plate! Eat one before you test your luck again!'
-            // let counterElement = 0;
-        // for(counterElement <= 10){
-        //     counterElement = counterElement + 1;
-        // }
-        // console.log(counterElement)
-        
-         
-            // buttonElement.removeEventListener('click')
-            //function
-            //
         }
        
 
@@ -60,27 +50,20 @@ buttonElement.addEventListener('click', () => {
 }); 
 
 eatElement.addEventListener('click', () => {
-    if (counterElement <= 10 || counterElement === 10){
+    const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+    if (counterElement < 10 && counterElement >= 0){
     counterElement = counterElement - 1
     cookieDisplayElement.textContent = `mmmmmm Hope you enjoyed!`
             counterDisplayElement.textContent = cookieUpdateElement;
             ding.volume = 1
             ding.play()
     }
+    
 });
 
 // cookie image pop up
-
-
-
-// sound byte for button
-    
-    // ding.volume = .05
-    // ding.play()
 
 // cookie counter
 
 
 
-// const tooManyElement = `you have too many cookies! Eat a cookie to get more!`
-            // diabetesElement.TextContent = tooManyElement;

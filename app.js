@@ -6,6 +6,7 @@ const counterDisplayElement = document.querySelector(".counter")
 const backgroundElement = document.querySelector(".background")
 const CookiePop = document.querySelector(".cookieGrid")
 const eatElement = document.getElementById("eatCookie")
+// const cookiePlateElement = document.querySelector(".cookiePlate")
 // OUTPUT CONSTANTS
 
 
@@ -18,8 +19,12 @@ const diabetesElement = document.getElementById("tooMany")
 const ding = new Audio("../sounds/bell.mp3")
 const munch = new Audio("../sounds/munch.mp3")
 
-// const plateImage = document.createElement("img")
-// img.src = "../images/elegant-plate-p-4000.png";
+//PLATE PHOTO 
+const image = document.createElement("img");
+image.src = "./images/elegant-plate-p-4000.png";
+document.querySelector(".cookiePlate").appendChild(image)
+
+
 // const cookieImagePlateElement = document.querySelector(".cookiePlate").appendChild(plateImage);
 
 

@@ -17,6 +17,15 @@ const diabetesElement = document.getElementById("tooMany")
 // MEDIA CONSTANTS
 const ding = new Audio("../sounds/MouseClick.wav")
 
+const plateImage = document.createElement("img")
+img.src = "../images/elegant-plate-p-4000.png";
+const cookieImagePlateElement = document.querySelector(".cookiePlate").appendChild(plateImage);
+
+
+
+
+// document.createElement("img")
+
 let counterElement = 0;
 
 
@@ -29,9 +38,6 @@ const functionButton = () => {
             ding.play()
 }
 
-
-// image for cookie plate
-// document.querySelector(cookieGrid).appendChild("https://pluspng.com/img-png/elegant-plate-p-4000.png")
 
 //output, you win a cookie 
 buttonElement.addEventListener('click', () => {

@@ -15,11 +15,12 @@ const diabetesElement = document.getElementById("tooMany")
 
 
 // MEDIA CONSTANTS
-const ding = new Audio("../sounds/MouseClick.wav")
+const ding = new Audio("../sounds/bell.mp3")
+const munch = new Audio("../sounds/munch.mp3")
 
-const plateImage = document.createElement("img")
-img.src = "../images/elegant-plate-p-4000.png";
-const cookieImagePlateElement = document.querySelector(".cookiePlate").appendChild(plateImage);
+// const plateImage = document.createElement("img")
+// img.src = "../images/elegant-plate-p-4000.png";
+// const cookieImagePlateElement = document.querySelector(".cookiePlate").appendChild(plateImage);
 
 
 
@@ -63,12 +64,12 @@ buttonElement.addEventListener('click', () => {
 
 eatElement.addEventListener('click', () => {
     const cookieUpdateElement = `you currently have ${counterElement} cookies.`
-    if (counterElement < 10 && counterElement >= 0){
+    if (counterElement <= 10 && counterElement >= 0){
     counterElement = counterElement - 1
     cookieDisplayElement.textContent = `mmmmmm Hope you enjoyed!`
             counterDisplayElement.textContent = cookieUpdateElement;
-            ding.volume = 1
-            ding.play()
+            munch.volume = 1
+            munch.play()
     }
     
 });

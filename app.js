@@ -4,7 +4,7 @@ const buttonElement = document.getElementById("bigButton");
 const winCookieElement = 'Ha-Cha! You win a cookie!'
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
-const ding = new Audio("../MouseClick.wav")
+const ding = new Audio("../sounds/MouseClick.wav")
 const backgroundElement = document.querySelector(".background")
 
 const CookiePop = document.querySelector(".cookieGrid")

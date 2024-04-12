@@ -24,6 +24,9 @@ const image = document.createElement("img");
 image.src = "./images/elegant-plate-p-4000.png";
 document.querySelector(".cookiePlate").appendChild(image)
 
+//BACKGROUND IMAGE
+
+
 
 // const cookieImagePlateElement = document.querySelector(".cookiePlate").appendChild(plateImage);
 

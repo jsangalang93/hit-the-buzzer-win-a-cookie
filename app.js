@@ -9,7 +9,7 @@ const backgroundElement = document.querySelector(".background")
 
 const CookiePop = document.querySelector(".cookieGrid")
 const diabetesElement = document.getElementById("tooMany")
-const EatElement = document.getElementById("eatCookie")
+const eatElement = document.getElementById("eatCookie")
 
 let counterElement = 0;
 
@@ -29,14 +29,6 @@ const functionButton = () => {
 
 //output, you win a cookie 
 buttonElement.addEventListener('click', () => {
-    
-
-    // cookieDisplayElement.textContent = winCookieElement;
-
-    // sound byte for button
-    // ding.volume = 1
-    // ding.play()
-    
     // cookie counter
     counterElement = counterElement + 1
 
@@ -61,11 +53,21 @@ buttonElement.addEventListener('click', () => {
             //function
             //
         }
-    
+       
 
     // cookie popup
 
 }); 
+
+eatElement.addEventListener('click', () => {
+    if (counterElement <= 10 || counterElement === 10){
+    counterElement = counterElement - 1
+    cookieDisplayElement.textContent = `mmmmmm Hope you enjoyed!`
+            counterDisplayElement.textContent = cookieUpdateElement;
+            ding.volume = 1
+            ding.play()
+    }
+});
 
 // cookie image pop up
 

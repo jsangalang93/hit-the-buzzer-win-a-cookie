@@ -1,15 +1,21 @@
 // V buttonElement is your element on JS query slecting bigButton class in css
 
 const buttonElement = document.getElementById("bigButton");
-const winCookieElement = 'Ha-Cha! You win a cookie!'
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
-const ding = new Audio("../sounds/MouseClick.wav")
 const backgroundElement = document.querySelector(".background")
-
 const CookiePop = document.querySelector(".cookieGrid")
-const diabetesElement = document.getElementById("tooMany")
 const eatElement = document.getElementById("eatCookie")
+// OUTPUT CONSTANTS
+
+
+// CONST TO DISPLAY TOO MANY COOKIES PROMPT
+const diabetesElement = document.getElementById("tooMany")
+
+
+
+// MEDIA CONSTANTS
+const ding = new Audio("../sounds/MouseClick.wav")
 
 let counterElement = 0;
 
@@ -35,7 +41,7 @@ buttonElement.addEventListener('click', () => {
     const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 10 || counterElement === 10){
-            cookieDisplayElement.textContent = winCookieElement;
+            cookieDisplayElement.textContent = `Ha-Cha! You win a cookie!`
             counterDisplayElement.textContent = cookieUpdateElement;
             ding.volume = 1
             ding.play()

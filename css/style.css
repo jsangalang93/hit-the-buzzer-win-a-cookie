@@ -5,11 +5,7 @@ body {
     
 }
 
-/* .mainGrid {
-    display: flex;
 
-
-} */
 
 h1 {
     font-family: "bangers";
@@ -44,15 +40,24 @@ button {
     
 }
 
-.cookiePlate {
-    
+.cookiePlateGrid {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px
+    /* background: pink */
+}
+
+.cookiePlate {
+    display: flex;
+    justify-content: center;
     height: 400px;
     width: 400px;
     background-color: white;
     border-radius: 250px;
-    margin: 40px;
+    /* margin: 40px;*/
 }
 
 #tooMany {

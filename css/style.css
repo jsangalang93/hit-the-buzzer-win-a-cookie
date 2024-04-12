@@ -1,16 +1,32 @@
 body {
-    background: black;
+    background-color:black;
     text-align: center;
     color: white;
     
 }
 
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.mainGrid {
+    width: 100vw;
+    height: 100vh;
+}
+
 h1 {
     font-family: "bangers";
-    color: white;
+    color: yellow;
     font-size: 75px;
     text-align: center;
     margin: 0 auto;
+    text-shadow: 0px 5px 10px black
 
 }
 
@@ -32,6 +48,10 @@ button {
     width: 100px;
     border-radius: 50px;
     margin: 20px;
+}
+
+.whatKind {
+    font-family: 'bangers';
 }
 
 .counter {

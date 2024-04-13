@@ -47,12 +47,35 @@ button {
     height:100px;
     width: 100px;
     border-radius: 50px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .whatKind {
     font-family: 'bangers';
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+
 }
+/* #cookieChoiceAppendSug {
+    background-color: pink;
+    font-family: 'bangers';
+    height:100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+#cookieChoiceAppendChoc {
+    background-color: purple;
+    font-family: 'bangers';
+    height:100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 10px;
+} */
+
+
 
 .counter {
     font-family: 'bangers';

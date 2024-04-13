@@ -37,6 +37,7 @@ document.querySelector(".cookiePlate").appendChild(image)
 const backgroundImage =document.createElement("img");
 backgroundImage.src = "./images/background.jpg"
 document.querySelector(".mainGrid").appendChild(backgroundImage)
+//adding class to backgorund element, styling
 backgroundImage.classList.add('background')
 
 // const cookieImagePlateElement = document.querySelector(".cookiePlate").appendChild(plateImage);
@@ -78,8 +79,42 @@ buttonElement.addEventListener('click', () => {
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 10 || counterElement === 10){
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
-            whatKindElement.textContent = `(Pick 'Chocolate chip' or 'Birthday cookie')`
-            counterDisplayElement.textContent = cookieUpdateElement;
+            // whatKindElement.textContent = `(Pick 'Chocolate chip' or 'Birthday cookie')`
+                const CookieChoiceElement = document.querySelector(".cookieChoice")
+                // const button1 = 
+                // const button2 =
+                const cookieChoiceAppendSug = document.createElement("button")
+                cookieChoiceAppendSug.textContent = `Sugar Cookie`
+                document.getElementById("cookieChoice1").appendChild(cookieChoiceAppendSug)
+                counterDisplayElement.textContent = cookieUpdateElement;
+
+                const cookieChoiceAppendChoc = document.createElement("button")
+                cookieChoiceAppendChoc.textContent = `Chocolate Chip Cookie`
+                document.getElementById("cookieChoice2").appendChild(cookieChoiceAppendChoc)
+
+                cookieChoiceAppendSug.addEventListener('click', () => {
+
+                    cookieDisplayElement.textContent = `Sugar Cookie it is!`
+                    const whatKindElement = document.querySelector(".whatKind")
+                    // whatKindElement.(whatKindElement.firstChild);
+                    // whatKindElement.clearChildren(whatKindElement);
+                    
+                });
+
+                cookieChoiceAppendChoc.addEventListener('click', () => {
+                    cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
+                    
+                    const whatKindElement = document.querySelector(".whatKind")
+                    whatKindElement.clearChildren(whatKindElement);
+                    // whatKindElement.removeChild(whatKindElement.lastChild);
+
+                })
+
+
+                    
+                // console.log('choc works');
+
+            // counterDisplayElement.textContent = cookieUpdateElement;
             ding.volume = 1
             ding.play()
         }else{

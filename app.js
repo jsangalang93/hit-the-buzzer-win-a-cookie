@@ -31,7 +31,7 @@ document.querySelector(".cookiePlate").appendChild(image)
 const backgroundImage =document.createElement("img");
 backgroundImage.src = "./images/background.jpg"
 document.querySelector(".mainGrid").appendChild(backgroundImage)
-//adding class to backgorund element, styling
+//adding class to background element, styling
 backgroundImage.classList.add('background')
 
 
@@ -81,7 +81,7 @@ buttonElement.addEventListener('click', () => {
                 document.querySelector(".cookieChoice2").appendChild(cookieChoiceAppendChoc)
 
                 cookieChoiceAppendSug.addEventListener('click', () => {
-
+                    
                     cookieDisplayElement.textContent = `Sugar Cookie it is!`
                     azucar.volume = 1
                     azucar.play()
@@ -92,11 +92,18 @@ buttonElement.addEventListener('click', () => {
                 });
 
                 cookieChoiceAppendChoc.addEventListener('click', () => {
+                    const appendCookiesElement = document.querySelector(".appendCookies")
+                    const chocoImage = document.createElement("img");
+                    chocoImage.src = "./images/Cookie Photo.png";
+                    document.querySelector(".appendCookies").appendChild(chocoImage)
+                    chocoImage.classList.add('.app1')
+
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
                     choco.volume = 1
                     choco.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
+
                   
 
                 });   

@@ -92,7 +92,7 @@ buttonElement.addEventListener('click', () => {
                     const whatKindElement = document.querySelector(".whatKind")
                     cookieChoiceAppendChoc.removeAttribute('disabled');
                     cookieChoiceAppendSug.removeAttribute('disabled');
-                    // whatKindElement.removeChild(whatKindElement.lastChild);
+                    
 
                 })
 

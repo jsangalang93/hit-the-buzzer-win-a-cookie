@@ -64,7 +64,7 @@ buttonElement.addEventListener('click', () => {
 
     const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     // counterDisplayElement.textContent = cookieUpdateElement;
-        if(counterElement < 10 || counterElement === 10){
+        if(counterElement < 9 || counterElement === 9){
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
             ding.volume = 1
             ding.play()
@@ -87,16 +87,23 @@ buttonElement.addEventListener('click', () => {
                     azucar.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
-                 
+                    
+                    const chocoImage = document.createElement("img");
+                    chocoImage.src = "./images/Sugar Resize.png";
+                    document.querySelector(".appendCookies").appendChild(chocoImage)
+                    chocoImage.classList.add(".cookieResize")
+
+
                     
                 });
 
                 cookieChoiceAppendChoc.addEventListener('click', () => {
-                    const appendCookiesElement = document.querySelector(".appendCookies")
+                    // const appendCookiesElement = document.querySelector(".appendCookies")
                     const chocoImage = document.createElement("img");
-                    chocoImage.src = "./images/Cookie Photo.png";
+                    chocoImage.src = "./images/Chocolate Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
-                    chocoImage.classList.add('.app1')
+                    chocoImage.classList.add(".cookieResize")
+
 
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
                     choco.volume = 1

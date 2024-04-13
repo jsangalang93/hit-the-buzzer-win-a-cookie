@@ -95,23 +95,31 @@ button {
     border-color: pink;
 }
 
-.appendCookies {
+/* .appendCookies {
     display: grid;
     position: relative;
     z-index: 2;
-}
+} */
 
-.cookiesHere {
-    display: flex;
+.appendCookies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     border: dotted;
     border-color: black;
     height: 275px;
     width: 275px;
     position: absolute;
-    z-index: 2;
     margin-top: 60px;
 
+}
+
+.cookieResize {
+    /* background-color: pink; */
+    display: grid;
+
+    max-height: 275px;
+    width: 275px;
 }
 
 .cookiePlate {

@@ -16,6 +16,10 @@ IMAGE CITATION
     background image https://perchance.org/ai-photo-generator
     plate image https://pluspng.com/png-3187.html
     cookie image provided by pngtree.com
+chocolate chip image https://www.pngarts.com/explore/113400
+sugar cookie image https://www.pngarts.com/explore/113376
+
+resizing host https://onlinepngtools.com/resize-png
 
 SOUND CITATION
 

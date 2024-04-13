@@ -19,6 +19,8 @@ const diabetesElement = document.getElementById("tooMany")
 // MEDIA CONSTANTS
 const ding = new Audio("../sounds/bell.mp3")
 const munch = new Audio("../sounds/munch.mp3")
+const choco =new Audio("../sounds/choco chip.mp3")
+const azucar = new Audio("../sounds/azucar.mp3")
 
 //PLATE PHOTO 
 const image = document.createElement("img");
@@ -79,21 +81,18 @@ buttonElement.addEventListener('click', () => {
                 cookieChoiceAppendSug.addEventListener('click', () => {
 
                     cookieDisplayElement.textContent = `Sugar Cookie it is!`
-                    const whatKindElement = document.querySelector(".whatKind");
-                    
+                    azucar.volume = 1
+                    azucar.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
-                  
-
-                  
+                 
                     
                 });
 
                 cookieChoiceAppendChoc.addEventListener('click', () => {
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
-                    
-                    const whatKindElement = document.querySelector(".whatKind");
-                    
+                    choco.volume = 1
+                    choco.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
                   

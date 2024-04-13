@@ -19,7 +19,7 @@ const diabetesElement = document.getElementById("tooMany")
 // MEDIA CONSTANTS
 const ding = new Audio("../sounds/bell.mp3")
 const munch = new Audio("../sounds/munch.mp3")
-const choco =new Audio("../sounds/choco chip.mp3")
+const choco =new Audio("../sounds/chocolate.mp3")
 const azucar = new Audio("../sounds/azucar.mp3")
 
 //PLATE PHOTO 
@@ -66,6 +66,8 @@ buttonElement.addEventListener('click', () => {
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 10 || counterElement === 10){
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
+            ding.volume = 1
+            ding.play()
                 const CookieChoiceElement = document.querySelector(".cookieChoice")
                 // const button1 = 
                 // const button2 =
@@ -100,8 +102,8 @@ buttonElement.addEventListener('click', () => {
                 });   
 
             // counterDisplayElement.textContent = cookieUpdateElement;
-            ding.volume = 1
-            ding.play()
+            // ding.volume = 1
+            // ding.play()
         }else{
             buttonElement.removeEventListener('click', buttonElement)
             diabetesElement.textContent = 'You seem to have a lot on your plate! Eat one before you test your luck again!'

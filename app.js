@@ -66,12 +66,15 @@ eatElement.addEventListener('click', () => {
 //output, you win a cookie 
 buttonElement.addEventListener('click', () => {
     // cookie counter
-    counterElement = counterElement + 1
-    console.log("this is the counter", counterElement)
+    
 
-    const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+    
     // counterDisplayElement.textContent = cookieUpdateElement;
-        if(counterElement < 9 || counterElement === 9){
+        if(counterElement < 9){
+            
+        counterElement = counterElement + 1
+        const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+        console.log("this is the counter", counterElement)
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
             // ding.volume = 1
             // ding.play()

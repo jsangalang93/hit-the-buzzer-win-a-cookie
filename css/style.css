@@ -129,7 +129,7 @@ button {
     width: 400px;
     background-color: white;
     border-radius: 250px;
-    /* margin: 40px;*/
+    /* margin: 40px; */
 }
 
 #tooMany {
@@ -139,33 +139,32 @@ button {
 
 @media (max-width: 375px) {
     h1 {
-    font-size: 30px;
+    font-size: 25px;
     }
     button {
-        height: 65px;
-        width: 65px;
-        font-size 20px;
+        height: 50px;
+        width: 50px;
+        font-size: 10px;
     }
     .cookiePlate {
-        height: 325px;
-        width: 325px;
+        height: 225px;
+        width: 225px;
     }
     .appendCookies {
-        width: 200px;
+        width: 250px;
         height: 200px;
         margin-bottom: 20px;
-        border: solid;
-        border-color: white;
+        /* border: solid; */
+        /* border-color: white; */
     }
     #cookieDisplay {
         font-family: 'bangers';
-        font-size: 20px;
-        margin: 5px;  
+        font-size: 11px;
+        margin: 2px;  
     }
 
     .counter {
         font-size: 10px;
         color: yellow;
     }
-
 }

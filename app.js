@@ -47,10 +47,13 @@ const functionButton = () => {
 }
 eatElement.addEventListener('click', () => {
     const cookieUpdateElement = `you currently have ${counterElement} cookies.`
-    if (counterElement <= 11 && counterElement >= 0){
+    
+    if (counterElement <= 10 && counterElement >= 0){
     counterElement = counterElement - 1
     cookieDisplayElement.textContent = `mmmmm Hope you enjoyed!`
             counterDisplayElement.textContent = cookieUpdateElement;
+            const appendCookiesElement = document.querySelector(".appendCookies")
+            appendCookiesElement.removeChild(appendCookiesElement.firstElementChild);
             munch.volume = 1
             munch.play()
     }
@@ -121,6 +124,7 @@ buttonElement.addEventListener('click', () => {
         }else{
             buttonElement.removeEventListener('click', buttonElement)
             diabetesElement.textContent = 'You seem to have a lot on your plate! Eat one before you test your luck again!'
+
         }
 
 }); 

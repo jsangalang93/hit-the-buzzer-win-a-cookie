@@ -1,6 +1,6 @@
 // V buttonElement is your element on JS query slecting bigButton class in css
 
-const buttonElement = document.getElementById("bigButton");
+const buttonElement = document.getElementById("bigButton")
 const cookieDisplayElement = document.getElementById("cookieDisplay")
 const counterDisplayElement = document.querySelector(".counter")
 const backgroundElement = document.querySelector(".background")
@@ -34,7 +34,6 @@ document.querySelector(".mainGrid").appendChild(backgroundImage)
 //adding class to background element, styling
 backgroundImage.classList.add('background')
 
-
 let counterElement = 0;
 
 const functionButton = () => {
@@ -46,7 +45,6 @@ const functionButton = () => {
             // ding.play()
 }
 eatElement.addEventListener('click', () => {
-    // const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     
     if (counterElement <= 10 && counterElement >= 1){
         counterElement = counterElement - 1
@@ -66,9 +64,6 @@ eatElement.addEventListener('click', () => {
 
 //output, you win a cookie 
 buttonElement.addEventListener('click', () => {
-    // cookie counter
-    
-
     
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 9){
@@ -102,10 +97,7 @@ buttonElement.addEventListener('click', () => {
                     const chocoImage = document.createElement("img");
                     chocoImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
-                    chocoImage.classList.add(".cookieResize")
-
-
-                    
+                    chocoImage.classList.add(".cookieResize")  
                 });
 
                 cookieChoiceAppendChoc.addEventListener('click', () => {
@@ -114,7 +106,6 @@ buttonElement.addEventListener('click', () => {
                     chocoImage.src = "./images/Chocolate Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
                     chocoImage.classList.add(".cookieResize")
-
 
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
                     // choco.volume = 1
@@ -136,3 +127,5 @@ buttonElement.addEventListener('click', () => {
         }
 
 }); 
+
+

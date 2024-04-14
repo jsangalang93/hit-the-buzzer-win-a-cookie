@@ -115,7 +115,7 @@ button {
 }
 
 .cookieResize {
-    /* background-color: pink; */
+    background-color: pink;
     display: grid;
 
     max-height: 275px;
@@ -135,4 +135,37 @@ button {
 #tooMany {
     font-family: 'bangers';
     color: red;
+}
+
+@media (max-width: 375px) {
+    h1 {
+    font-size: 30px;
+    }
+    button {
+        height: 65px;
+        width: 65px;
+        font-size 20px;
+    }
+    .cookiePlate {
+        height: 325px;
+        width: 325px;
+    }
+    .appendCookies {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        border: solid;
+        border-color: white;
+    }
+    #cookieDisplay {
+        font-family: 'bangers';
+        font-size: 20px;
+        margin: 5px;  
+    }
+
+    .counter {
+        font-size: 10px;
+        color: yellow;
+    }
+
 }

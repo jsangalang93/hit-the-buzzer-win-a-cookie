@@ -28,7 +28,7 @@ image.src = "./images/elegant-plate-p-4000.png";
 document.querySelector(".cookiePlate").appendChild(image)
 
 // //BACKGROUND IMAGE
-const backgroundImage =document.createElement("img");
+const backgroundImage = document.createElement("img");
 backgroundImage.src = "./images/background.jpg"
 document.querySelector(".mainGrid").appendChild(backgroundImage)
 //adding class to background element, styling
@@ -40,37 +40,41 @@ let counterElement = 0;
 const functionButton = () => {
     let counterElement = 0;
     counterElement = counterElement + 1
-    cookieDisplayElement.textContent = winCookieElement;
+    // cookieDisplayElement.textContent = winCookieElement;
             counterDisplayElement.textContent = cookieUpdateElement;
-            ding.volume = 1
-            ding.play()
+            // ding.volume = 1
+            // ding.play()
 }
 eatElement.addEventListener('click', () => {
-    const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+    // const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     
-    if (counterElement <= 10 && counterElement >= 0){
-    counterElement = counterElement - 1
+    if (counterElement <= 10 && counterElement >= 1){
+        counterElement = counterElement - 1
+        const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+
     cookieDisplayElement.textContent = `mmmmm Hope you enjoyed!`
             counterDisplayElement.textContent = cookieUpdateElement;
+
             const appendCookiesElement = document.querySelector(".appendCookies")
             appendCookiesElement.removeChild(appendCookiesElement.firstElementChild);
-            munch.volume = 1
-            munch.play()
+            // munch.volume = 1
+            // munch.play()
     }
-    
+    console.log("this is the cookie button", counterElement);
 });
 
 //output, you win a cookie 
 buttonElement.addEventListener('click', () => {
     // cookie counter
     counterElement = counterElement + 1
+    console.log("this is the counter", counterElement)
 
     const cookieUpdateElement = `you currently have ${counterElement} cookies.`
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 9 || counterElement === 9){
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
-            ding.volume = 1
-            ding.play()
+            // ding.volume = 1
+            // ding.play()
                 const CookieChoiceElement = document.querySelector(".cookieChoice")
                 // const button1 = 
                 // const button2 =
@@ -86,8 +90,8 @@ buttonElement.addEventListener('click', () => {
                 cookieChoiceAppendSug.addEventListener('click', () => {
                     
                     cookieDisplayElement.textContent = `Sugar Cookie it is!`
-                    azucar.volume = 1
-                    azucar.play()
+                    // azucar.volume = 1
+                    // azucar.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
                     
@@ -109,8 +113,8 @@ buttonElement.addEventListener('click', () => {
 
 
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
-                    choco.volume = 1
-                    choco.play()
+                    // choco.volume = 1
+                    // choco.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
 

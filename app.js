@@ -57,6 +57,7 @@ eatElement.addEventListener('click', () => {
 
             const appendCookiesElement = document.querySelector(".appendCookies")
             appendCookiesElement.removeChild(appendCookiesElement.firstElementChild);
+            diabetesElement.textContent = '';
             // munch.volume = 1
             // munch.play()
     }

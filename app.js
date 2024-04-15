@@ -31,6 +31,7 @@ image.classList.add("plateResize")
 
 
 
+
 // //BACKGROUND IMAGE
 const backgroundImage = document.createElement("img");
 backgroundImage.src = "./images/background.jpg"
@@ -49,8 +50,8 @@ const functionButton = () => {
     counterElement = counterElement + 1
     // cookieDisplayElement.textContent = winCookieElement;
             counterDisplayElement.textContent = cookieUpdateElement;
-            ding.volume = 1
-            ding.play()
+            // ding.volume = 1
+            // ding.play()
 }
 
 
@@ -66,8 +67,8 @@ eatElement.addEventListener('click', () => {
             const appendCookiesElement = document.querySelector(".appendCookies")
             appendCookiesElement.removeChild(appendCookiesElement.firstElementChild);
             diabetesElement.textContent = '';
-            munch.volume = 1
-            munch.play()
+            // munch.volume = 1
+            // munch.play()
     }
     // console.log("this is the cookie button", counterElement);
 });
@@ -87,8 +88,8 @@ buttonElement.addEventListener('click', () => {
                 console.log("this is the counter", counterElement)
                 cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
                     document.getElementById('bigButton').style.display= 'none';
-                ding.volume = 1
-                ding.play()
+                // ding.volume = 1
+                // ding.play()
                 // const CookieChoiceElement = document.querySelector(".cookieChoice")
                 const cookieChoiceButtonSug = document.createElement("button")
                 cookieChoiceButtonSug.textContent = `Sugar Cookie`
@@ -106,8 +107,8 @@ buttonElement.addEventListener('click', () => {
                     
                     cookieDisplayElement.textContent = `Sugar Cookie it is!`
                     
-                    azucar.volume = 1
-                    azucar.play()
+                    // azucar.volume = 1
+                    // azucar.play()
                     // mainGridElement.appendChild(buttonElement)
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
@@ -133,8 +134,8 @@ buttonElement.addEventListener('click', () => {
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
                     
 
-                    choco.volume = 1
-                    choco.play()
+                    // choco.volume = 1
+                    // choco.play()
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
                     document.getElementById('bigButton').style.display= 'inline-block';

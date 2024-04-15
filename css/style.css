@@ -5,6 +5,7 @@ body {
     
 }
 
+
 #bigButton {
     align-self: center;
 }
@@ -24,6 +25,9 @@ body {
 }
 
 .mainGrid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
@@ -148,6 +152,11 @@ button {
     color: red;
 }
 
+.plateResize {
+    justify-content: center;
+
+}
+
 
 
 @media (max-width: 480px) {
@@ -189,7 +198,7 @@ button {
         justify-content: center;
         height: 340px;
         width: 340px;
-        justify-content: center;
+        
     }
 
     .cookiePlate {

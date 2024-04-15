@@ -27,7 +27,8 @@ const azucar = new Audio("../sounds/azucar.mp3")
 const image = document.createElement("img");
 image.src = "./images/elegant-plate-p-4000.png";
 document.querySelector(".cookiePlate").appendChild(image)
-image.classList.add(".plateResize")
+image.classList.add("plateResize")
+
 
 
 // //BACKGROUND IMAGE
@@ -36,6 +37,8 @@ backgroundImage.src = "./images/background.jpg"
 document.querySelector(".mainGrid").appendChild(backgroundImage)
 //adding class to background element, styling
 backgroundImage.classList.add('background')
+
+
 
 let counterElement = 0;
 
@@ -87,31 +90,31 @@ buttonElement.addEventListener('click', () => {
                 // ding.volume = 1
                 // ding.play()
                 // const CookieChoiceElement = document.querySelector(".cookieChoice")
-                const cookieChoiceAppendSug = document.createElement("button")
-                cookieChoiceAppendSug.textContent = `Sugar Cookie`
-                document.querySelector(".cookieChoice1").appendChild(cookieChoiceAppendSug)
+                const cookieChoiceButtonSug = document.createElement("button")
+                cookieChoiceButtonSug.textContent = `Sugar Cookie`
+                document.querySelector(".cookieChoice1").appendChild(cookieChoiceButtonSug)
                 counterDisplayElement.textContent = cookieUpdateElement;
 
-                const cookieChoiceAppendChoc = document.createElement("button")
-                cookieChoiceAppendChoc.textContent = `Chocolate Chip Cookie`
-                document.querySelector(".cookieChoice2").appendChild(cookieChoiceAppendChoc)
+                const cookieChoiceButtonChoc = document.createElement("button")
+                cookieChoiceButtonChoc.textContent = `Chocolate Chip Cookie`
+                document.querySelector(".cookieChoice2").appendChild(cookieChoiceButtonChoc)
 
  
 
 
-                cookieChoiceAppendSug.addEventListener('click', () => {
+                cookieChoiceButtonSug.addEventListener('click', () => {
                     
                     cookieDisplayElement.textContent = `Sugar Cookie it is!`
                     
                     // azucar.volume = 1
                     // azucar.play()
                     // mainGridElement.appendChild(buttonElement)
-                    cookieChoiceAppendChoc.remove();
-                    cookieChoiceAppendSug.remove();
-                    const chocoImage = document.createElement("img");
-                    chocoImage.src = "./images/Sugar Resize.png";
-                    document.querySelector(".appendCookies").appendChild(chocoImage)
-                    chocoImage.classList.add(".cookieResize")
+                    cookieChoiceButtonChoc.remove();
+                    cookieChoiceButtonSug.remove();
+                    const sugImage = document.createElement("img");
+                    sugImage.src = "./images/Sugar Resize.png";
+                    document.querySelector(".appendCookies").appendChild(sugImage)
+                    sugImage.classList.add(".cookieResize")
                     document.getElementById('bigButton').style.display= 'inline-block';
                     // ^https://codingtipsandtricks.com/blog/how-to-hide-and-show-dom-elements-using-javascript/
 
@@ -119,7 +122,7 @@ buttonElement.addEventListener('click', () => {
  
                 });
 
-                cookieChoiceAppendChoc.addEventListener('click', () => {
+                cookieChoiceButtonChoc.addEventListener('click', () => {
                     // mainGridElement.appendChild(buttonElement)
                     // const appendCookiesElement = document.querySelector(".appendCookies")
                     const chocoImage = document.createElement("img");
@@ -132,8 +135,8 @@ buttonElement.addEventListener('click', () => {
 
                     // choco.volume = 1
                     // choco.play()
-                    cookieChoiceAppendChoc.remove();
-                    cookieChoiceAppendSug.remove();
+                    cookieChoiceButtonChoc.remove();
+                    cookieChoiceButtonSug.remove();
                     document.getElementById('bigButton').style.display= 'inline-block';
 
                     

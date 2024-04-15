@@ -18,14 +18,14 @@ const whatKindElement = document.querySelector(".whatKind")
 const diabetesElement = document.getElementById("tooMany")
 
 // MEDIA CONSTANTS
-const ding = new Audio("../sounds/bell.mp3")
-const munch = new Audio("../sounds/munch.mp3")
-const choco =new Audio("../sounds/chocolate.mp3")
-const azucar = new Audio("../sounds/azucar.mp3")
+const ding = new Audio("sounds/bell.mp3")
+const munch = new Audio("sounds/munch.mp3")
+const choco =new Audio("sounds/chocolate.mp3")
+const azucar = new Audio("sounds/azucar.mp3")
 
 //PLATE PHOTO 
 const image = document.createElement("img");
-image.src = "./images/elegant-plate-p-4000.png";
+image.src = "images/elegant-plate-p-4000.png";
 document.querySelector(".cookiePlate").appendChild(image)
 image.classList.add("plateResize")
 

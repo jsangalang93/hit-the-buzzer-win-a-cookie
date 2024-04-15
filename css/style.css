@@ -133,15 +133,15 @@ button {
     width: 275px;
 }
 
-/* .cookiePlate {
+.cookiePlate {
     display: flex;
     justify-content: center;
     height: 400px;
     width: 400px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 250px;
-    margin: 40px;
-} */
+    margin: 0px;
+}
 
 #tooMany {
     font-family: 'bangers';
@@ -151,9 +151,9 @@ button {
 
 
 @media (max-width: 480px) {
-    .background {
+    /* .background {
         background-color: pink;
-    }
+    } */
     h1 {
     font-size: 20px;
     }
@@ -181,8 +181,8 @@ button {
         /* background-color: white; */
         border-radius: 280px;
         margin: 20px;
-        border: dotted;
-        border-color: pink;
+        /* border: dotted;
+        border-color: pink; */
     }
 
     .plateResize {
@@ -190,12 +190,12 @@ button {
         width: 340px;
     }
 
-    /* .cookiePlate {
+    .cookiePlate {
         width: 100px;
         height: 100px;
-        border: solid;
-        border-color: purple;
-    } */
+        /* border: solid;
+        border-color: purple; */
+    }
 
     .appendCookies {
         object-fit: cover;
@@ -206,9 +206,9 @@ button {
         margin-bottom: 4px;
         grid-auto-rows: 50px;
         grid-auto-columns: 5px;
-        border: solid;
+        /* border: solid; */
 
-        border-color: white;
+        /* border-color: white; */
     }
 
     /* .cookieResize {
@@ -252,8 +252,8 @@ button {
             /* width: 100%; */
             /* height: 200px; */
             max-height: 100%vph;
-            margin-bottom: 4px;
-            grid-auto-rows: 90px;
+            /* margin-bottom: 4px; */
+            grid-auto-rows: 60px;
             grid-auto-columns: 5 px;
             /* border: solid; */
     

@@ -87,8 +87,8 @@ buttonElement.addEventListener('click', () => {
                 console.log("this is the counter", counterElement)
                 cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
                     document.getElementById('bigButton').style.display= 'none';
-                // ding.volume = 1
-                // ding.play()
+                ding.volume = 1
+                ding.play()
                 // const CookieChoiceElement = document.querySelector(".cookieChoice")
                 const cookieChoiceButtonSug = document.createElement("button")
                 cookieChoiceButtonSug.textContent = `Sugar Cookie`

@@ -27,6 +27,8 @@ const azucar = new Audio("../sounds/azucar.mp3")
 const image = document.createElement("img");
 image.src = "./images/elegant-plate-p-4000.png";
 document.querySelector(".cookiePlate").appendChild(image)
+image.classList.add(".plateResize")
+
 
 // //BACKGROUND IMAGE
 const backgroundImage = document.createElement("img");
@@ -80,15 +82,15 @@ buttonElement.addEventListener('click', () => {
             // buttonElement.remove();
             
                 console.log("this is the counter", counterElement)
-            cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
+                cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
+                    document.getElementById('bigButton').style.display= 'none';
                 // ding.volume = 1
                 // ding.play()
-                const CookieChoiceElement = document.querySelector(".cookieChoice")
+                // const CookieChoiceElement = document.querySelector(".cookieChoice")
                 const cookieChoiceAppendSug = document.createElement("button")
                 cookieChoiceAppendSug.textContent = `Sugar Cookie`
                 document.querySelector(".cookieChoice1").appendChild(cookieChoiceAppendSug)
                 counterDisplayElement.textContent = cookieUpdateElement;
-                
 
                 const cookieChoiceAppendChoc = document.createElement("button")
                 cookieChoiceAppendChoc.textContent = `Chocolate Chip Cookie`
@@ -110,6 +112,8 @@ buttonElement.addEventListener('click', () => {
                     chocoImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
                     chocoImage.classList.add(".cookieResize")
+                    document.getElementById('bigButton').style.display= 'inline-block';
+                    // ^https://codingtipsandtricks.com/blog/how-to-hide-and-show-dom-elements-using-javascript/
 
                     
  
@@ -130,6 +134,8 @@ buttonElement.addEventListener('click', () => {
                     // choco.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
+                    document.getElementById('bigButton').style.display= 'inline-block';
+
                     
                   
 

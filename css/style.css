@@ -186,6 +186,7 @@ button {
     }
 
     .plateResize {
+        justify-content: center;
         height: 340px;
         width: 340px;
         justify-content: center;
@@ -194,6 +195,7 @@ button {
     .cookiePlate {
         width: 100px;
         height: 100px;
+        justify-content: center;
         /* border: solid;
         border-color: purple; */
     }

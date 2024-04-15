@@ -6,6 +6,7 @@ const counterDisplayElement = document.querySelector(".counter")
 const backgroundElement = document.querySelector(".background")
 const CookiePop = document.querySelector(".cookieGrid")
 const eatElement = document.getElementById("eatCookie")
+const mainGridElement = document.querySelector(".mainGrid")
 
 // what kind of cookie do you want
 const whatKindElement = document.querySelector(".whatKind")
@@ -36,6 +37,8 @@ backgroundImage.classList.add('background')
 
 let counterElement = 0;
 
+
+
 const functionButton = () => {
     let counterElement = 0;
     counterElement = counterElement + 1
@@ -44,12 +47,14 @@ const functionButton = () => {
             // ding.volume = 1
             // ding.play()
 }
+
+
+
 eatElement.addEventListener('click', () => {
     
     if (counterElement <= 10 && counterElement >= 1){
         counterElement = counterElement - 1
         const cookieUpdateElement = `you currently have ${counterElement} cookies.`
-
     cookieDisplayElement.textContent = `mmmmm Hope you enjoyed!`
             counterDisplayElement.textContent = cookieUpdateElement;
 
@@ -70,6 +75,8 @@ buttonElement.addEventListener('click', () => {
             
         counterElement = counterElement + 1
         const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+        buttonElement.remove();
+
         console.log("this is the counter", counterElement)
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
             // ding.volume = 1
@@ -77,6 +84,7 @@ buttonElement.addEventListener('click', () => {
                 const CookieChoiceElement = document.querySelector(".cookieChoice")
                 // const button1 = 
                 // const button2 =
+
                 const cookieChoiceAppendSug = document.createElement("button")
                 cookieChoiceAppendSug.textContent = `Sugar Cookie`
                 document.querySelector(".cookieChoice1").appendChild(cookieChoiceAppendSug)
@@ -86,21 +94,27 @@ buttonElement.addEventListener('click', () => {
                 cookieChoiceAppendChoc.textContent = `Chocolate Chip Cookie`
                 document.querySelector(".cookieChoice2").appendChild(cookieChoiceAppendChoc)
 
+
+
                 cookieChoiceAppendSug.addEventListener('click', () => {
                     
                     cookieDisplayElement.textContent = `Sugar Cookie it is!`
+                    
                     // azucar.volume = 1
                     // azucar.play()
+                    mainGridElement.appendChild(buttonElement)
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
-                    
                     const chocoImage = document.createElement("img");
                     chocoImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
-                    chocoImage.classList.add(".cookieResize")  
+                    chocoImage.classList.add(".cookieResize")
+                    
+ 
                 });
 
                 cookieChoiceAppendChoc.addEventListener('click', () => {
+                    mainGridElement.appendChild(buttonElement)
                     // const appendCookiesElement = document.querySelector(".appendCookies")
                     const chocoImage = document.createElement("img");
                     chocoImage.src = "./images/Chocolate Resize.png";
@@ -108,14 +122,17 @@ buttonElement.addEventListener('click', () => {
                     chocoImage.classList.add(".cookieResize")
 
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
+                    
+
                     // choco.volume = 1
                     // choco.play()
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
-
+                    
                   
 
                 });   
+
 
             // counterDisplayElement.textContent = cookieUpdateElement;
             // ding.volume = 1

@@ -64,7 +64,7 @@ eatElement.addEventListener('click', () => {
             // munch.volume = 1
             // munch.play()
     }
-    console.log("this is the cookie button", counterElement);
+    // console.log("this is the cookie button", counterElement);
 });
 
 //output, you win a cookie 

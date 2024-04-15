@@ -77,23 +77,24 @@ buttonElement.addEventListener('click', () => {
 
                 counterElement = counterElement + 1
             const cookieUpdateElement = `you currently have ${counterElement} cookies.`
-            buttonElement.remove();
+            // buttonElement.remove();
+            
                 console.log("this is the counter", counterElement)
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
                 // ding.volume = 1
                 // ding.play()
-
                 const CookieChoiceElement = document.querySelector(".cookieChoice")
                 const cookieChoiceAppendSug = document.createElement("button")
                 cookieChoiceAppendSug.textContent = `Sugar Cookie`
                 document.querySelector(".cookieChoice1").appendChild(cookieChoiceAppendSug)
                 counterDisplayElement.textContent = cookieUpdateElement;
+                
 
                 const cookieChoiceAppendChoc = document.createElement("button")
                 cookieChoiceAppendChoc.textContent = `Chocolate Chip Cookie`
                 document.querySelector(".cookieChoice2").appendChild(cookieChoiceAppendChoc)
 
-
+ 
 
 
                 cookieChoiceAppendSug.addEventListener('click', () => {
@@ -102,7 +103,7 @@ buttonElement.addEventListener('click', () => {
                     
                     // azucar.volume = 1
                     // azucar.play()
-                    mainGridElement.appendChild(buttonElement)
+                    // mainGridElement.appendChild(buttonElement)
                     cookieChoiceAppendChoc.remove();
                     cookieChoiceAppendSug.remove();
                     const chocoImage = document.createElement("img");
@@ -115,7 +116,7 @@ buttonElement.addEventListener('click', () => {
                 });
 
                 cookieChoiceAppendChoc.addEventListener('click', () => {
-                    mainGridElement.appendChild(buttonElement)
+                    // mainGridElement.appendChild(buttonElement)
                     // const appendCookiesElement = document.querySelector(".appendCookies")
                     const chocoImage = document.createElement("img");
                     chocoImage.src = "./images/Chocolate Resize.png";

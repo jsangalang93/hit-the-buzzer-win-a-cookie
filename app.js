@@ -72,19 +72,18 @@ buttonElement.addEventListener('click', () => {
     
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 9){
-            
-        counterElement = counterElement + 1
-        const cookieUpdateElement = `you currently have ${counterElement} cookies.`
-        buttonElement.remove();
 
-        console.log("this is the counter", counterElement)
+                const buttonElement = document.getElementById("bigButton")
+
+                counterElement = counterElement + 1
+            const cookieUpdateElement = `you currently have ${counterElement} cookies.`
+            buttonElement.remove();
+                console.log("this is the counter", counterElement)
             cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
-            // ding.volume = 1
-            // ding.play()
-                const CookieChoiceElement = document.querySelector(".cookieChoice")
-                // const button1 = 
-                // const button2 =
+                // ding.volume = 1
+                // ding.play()
 
+                const CookieChoiceElement = document.querySelector(".cookieChoice")
                 const cookieChoiceAppendSug = document.createElement("button")
                 cookieChoiceAppendSug.textContent = `Sugar Cookie`
                 document.querySelector(".cookieChoice1").appendChild(cookieChoiceAppendSug)
@@ -93,6 +92,7 @@ buttonElement.addEventListener('click', () => {
                 const cookieChoiceAppendChoc = document.createElement("button")
                 cookieChoiceAppendChoc.textContent = `Chocolate Chip Cookie`
                 document.querySelector(".cookieChoice2").appendChild(cookieChoiceAppendChoc)
+
 
 
 
@@ -109,6 +109,7 @@ buttonElement.addEventListener('click', () => {
                     chocoImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
                     chocoImage.classList.add(".cookieResize")
+
                     
  
                 });

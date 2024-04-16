@@ -307,6 +307,36 @@ background-color: blue;
         font-size: 20px;
         color: yellow;
         font-family: 'bangers';
+
+        
+    }
+
+    .mediaPlayer {
+        height: 70px;
+        width: 150px;
+        background-color: grey;
+        color:black;
+        font-family: 'bangers';
+        border-radius: 7px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .play {
+        height: 30px;
+        width:55px;
+        font-size: 10px;
+        font-family: 'bangers';
+        margin: 5px;
+    }
+    
+    .pause {
+        height:30px;
+        width: 60px;
+        font-size: 10px;
+        font-family: 'bangers';
+        margin: 5px;
+    
     }
 }
 

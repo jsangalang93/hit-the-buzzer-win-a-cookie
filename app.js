@@ -23,6 +23,7 @@ const munch = new Audio("sounds/munch.mp3")
 const choco =new Audio("sounds/chocolate.mp3")
 const azucar = new Audio("sounds/azucar.mp3")
 const wow = new Audio("sounds/wow.mp3")
+const nono = new Audio("sounds/nono.mp3")
 
 //PLATE PHOTO 
 const image = document.createElement("img");
@@ -178,8 +179,11 @@ buttonElement.addEventListener('click', () => {
             // ding.volume = 1
             // ding.play()
         }else{
+            nono.volume = 1
+            nono.play()
             buttonElement.removeEventListener('click', buttonElement)
             diabetesElement.textContent = 'You seem to have a lot on your plate! Eat one before you test your luck again!'
+            
 
         }
 

@@ -333,7 +333,7 @@ background-color: blue;
     .pause {
         height:30px;
         width: 60px;
-        font-size: 10px;
+        font-size: 0px;
         font-family: 'bangers';
         margin: 5px;
     
@@ -419,3 +419,69 @@ background-color: blue;
         }
 
 } */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 150px;
+        }
+        #bigButton {
+            height: 150px;
+            width: 150px;
+            font-size: 30px;
+            margin: 5px;
+            border-radius: 75px;
+        }
+        .cookiePlate {
+            height: 500px;
+            width: 500px;
+        }
+        .appendCookies {
+            object-fit: cover;
+            width: 320px;
+            
+            max-height: 100%;
+            margin-bottom: px;
+            border-color: white; 
+        }
+        #cookieDisplay {
+            font-family: 'bangers';
+            font-size: 25px;
+            margin: 2px;  
+        }
+
+        .appendCookies {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            /* border: dotted; */
+            /* border-color: black; */
+            height: 395px;
+            width: 350px;
+            position: absolute;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .cookieResize {
+            width:60px;
+            height: 200px;
+        }
+
+        #eatCookie {
+            background-color: blue;
+                font-family: 'bangers';
+                color: yellow;
+                height:80px;
+                width: 150px;
+                border-radius: 50px;
+                margin-top: 100px;
+                font-size: 35px;
+            }
+    
+        .counter {
+            font-size: 40px;
+            color: yellow;
+            font-family: 'bangers';
+        }
+
+} 
+

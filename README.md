@@ -1,5 +1,7 @@
 # hit-the-buzzer-win-a-cookie
 Unit 1 project
+PROJECT URL:
+https://jsangalang93.github.io/hit-the-buzzer-win-a-cookie/
 
 PROJECT DESCRIPTION:
 
@@ -25,6 +27,10 @@ Cleaning up the functionality of the game and limiting the decision making proce
 
 STEP 5: ADDING EXTRA FEATURES AND CLEANING UP UNUSED CODE
 Implementing sound effects, music and settings using same logic of the main game using basic HTML, CSS, and adding new calls in JavaScript.
+
+FUTURE STEPS:
+
+
 
 
 IMAGE CITATION

@@ -14,6 +14,36 @@ body {
     font-family: 'bangers'
 }
 
+.cookieButton1 {
+    background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:40px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.cookieButton2 {
+    background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:40px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.cookieButton3 {
+    background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:40px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
 .background {
     width: 100vw;
     height: 100vh;
@@ -53,7 +83,7 @@ a {
     font-family: 'bangers';
 }
 
-button {
+#bigButton {
     background-color: red;
     font-family: 'bangers';
     height:100px;
@@ -66,12 +96,22 @@ button {
 .whatKind {
     font-family: 'bangers';
     display: grid;
+    font-size: 35px;
+    color: red;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
 
-#eatCookie
+#eatCookie {
+background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:40px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+}
 
 /* #cookieChoiceButtonSug {
     background-color: pink;

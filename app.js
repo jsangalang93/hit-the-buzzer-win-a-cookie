@@ -91,16 +91,16 @@ buttonElement.addEventListener('click', () => {
                 ding.volume = 1
                 ding.play()
                 // const CookieChoiceElement = document.querySelector(".cookieChoice")
-                const cookieChoiceButtonSug = document.createElement("button")
+                const cookieChoiceButtonSug = document.createElement("cookieButton1")
                 cookieChoiceButtonSug.textContent = `Sugar Cookie`
                 document.querySelector(".cookieChoice1").appendChild(cookieChoiceButtonSug)
                 counterDisplayElement.textContent = cookieUpdateElement;
 
-                const cookieChoiceButtonChoc = document.createElement("button")
+                const cookieChoiceButtonChoc = document.createElement("cookieButton2")
                 cookieChoiceButtonChoc.textContent = `Chocolate Chip Cookie`
                 document.querySelector(".cookieChoice2").appendChild(cookieChoiceButtonChoc)
 
-                const cookieChoiceButtonPNut = document.createElement("button")
+                const cookieChoiceButtonPNut = document.createElement("cookieButton3")
                 cookieChoiceButtonPNut.textContent = `Peanut Butter`
                 document.querySelector(".cookieChoice3").appendChild(cookieChoiceButtonPNut)
 

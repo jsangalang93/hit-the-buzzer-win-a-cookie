@@ -54,14 +54,33 @@ body {
     z-index: -1;
 }
 .mediaPlayer {
-    height: 50px;
-    width: 110px;
+    height: 70px;
+    width: 150px;
     background-color: grey;
     color:black;
     font-family: 'bangers';
     border-radius: 7px;
     margin: 5px;
+    font-size: 20px;
 }
+
+.play {
+    height: 30px;
+    width:55px;
+    font-size: 20px;
+    font-family: 'bangers';
+    margin: 5px;
+}
+
+.pause {
+    height:30px;
+    width: 60px;
+    font-size: 20px;
+    font-family: 'bangers';
+    margin: 5px;
+
+}
+
 .mainGrid {
     display: flex;
     align-items: center;
@@ -116,10 +135,11 @@ a {
 background-color: blue;
     font-family: 'bangers';
     color: yellow;
-    height:40px;
-    width: 100px;
+    height:60px;
+    width: 130px;
     border-radius: 50px;
     margin: 5px;
+    font-size: 20px;
 }
 
 /* #cookieChoiceButtonSug {

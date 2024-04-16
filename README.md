@@ -15,7 +15,7 @@ STEP 1: (implementing main frame, assigning constants, creating if else to work 
 
 STEP 2: (implementing if else to count down)
 
-STEP 3: (adding sound bytes and images)
+STEP 3: ADDING SOUNDBYTES AND IMAGES: Appended the images throught the DOM using photos uploaded to the GitHub repository. Experimented with an AI art generator that arranged the background used.Sound clips were also added to the repository over URLs and some were edited and converted in Logic Pro.
 
 STEP 4: CLEANING THE MACHINE
 queries and debugging

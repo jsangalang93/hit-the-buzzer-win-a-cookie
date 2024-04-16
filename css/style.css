@@ -280,7 +280,7 @@ button {
 
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
     .background {
         background-color: magenta;
     }
@@ -300,13 +300,10 @@ button {
         .appendCookies {
             object-fit: cover;
             width: 220px;
-            /* width: 100%; */
-            /* height: 200px; */
+            
             max-height: 100%;
             margin-bottom: 4px;
-            /* grid-auto-rows: 60px;
-            grid-auto-columns: 5 px; */
-            /* border: solid; */
+            
     
             border-color: white; 
         }
@@ -322,4 +319,4 @@ button {
             font-family: 'bangers';
         }
 
-}
+} */

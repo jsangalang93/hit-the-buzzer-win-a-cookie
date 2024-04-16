@@ -14,7 +14,7 @@ body {
     font-family: 'bangers'
 }
 
-.cookieButton1 {
+/* .cookieButton1 {
     background-color: blue;
     font-family: 'bangers';
     color: yellow;
@@ -42,7 +42,7 @@ body {
     width: 100px;
     border-radius: 50px;
     margin: 5px;
-}
+} */
 
 .background {
     width: 100vw;
@@ -140,6 +140,18 @@ background-color: blue;
     border-radius: 50px;
     margin: 5px;
     font-size: 20px;
+}
+
+.cookieChoice1 {
+    color: green;
+}
+
+.cookieChoice2 {
+    color: blue;
+}
+
+.cookieChoice3 {
+    color: red;
 }
 
 /* #cookieChoiceButtonSug {
@@ -263,6 +275,33 @@ background-color: blue;
         border-color: pink; */
     }
 
+    #eatCookie {
+        background-color: blue;
+            font-family: 'bangers';
+            color: yellow;
+            height:60px;
+            width: 130px;
+            border-radius: 50px;
+            margin: 5px;
+            font-size: 20px;
+        }
+
+    .cookieChoice1 {
+        font-size: 20px;
+        color: green;
+    }
+
+    .cookieChoice2 {
+        font-size: 20px;
+        color: blue;
+    }
+
+    .cookieChoice3 {
+        font-size: 20px;
+        color: red;
+    }
+
+
     .plateResize {
         justify-content: center;
         height: 340px;
@@ -333,7 +372,7 @@ background-color: blue;
     .pause {
         height:30px;
         width: 60px;
-        font-size: 0px;
+        font-size: 10px;
         font-family: 'bangers';
         margin: 5px;
     

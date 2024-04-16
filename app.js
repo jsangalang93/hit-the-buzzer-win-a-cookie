@@ -34,7 +34,7 @@ image.classList.add("plateResize")
 
 // //BACKGROUND IMAGE
 const backgroundImage = document.createElement("img");
-backgroundImage.src = "./images/background.jpg"
+backgroundImage.src = "images/background.jpg"
 document.querySelector(".mainGrid").appendChild(backgroundImage)
 //adding class to background element, styling
 backgroundImage.classList.add('background')

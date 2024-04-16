@@ -53,7 +53,15 @@ body {
     bottom: 0;
     z-index: -1;
 }
-
+.mediaPlayer {
+    height: 50px;
+    width: 110px;
+    background-color: grey;
+    color:black;
+    font-family: 'bangers';
+    border-radius: 7px;
+    margin: 5px;
+}
 .mainGrid {
     display: flex;
     align-items: center;

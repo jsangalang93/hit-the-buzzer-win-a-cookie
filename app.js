@@ -22,6 +22,7 @@ const ding = new Audio("sounds/bell.mp3")
 const munch = new Audio("sounds/munch.mp3")
 const choco =new Audio("sounds/chocolate.mp3")
 const azucar = new Audio("sounds/azucar.mp3")
+const wow = new Audio("sounds/wow.mp3")
 
 //PLATE PHOTO 
 const image = document.createElement("img");
@@ -83,7 +84,7 @@ buttonElement.addEventListener('click', () => {
             const cookieUpdateElement = `you currently have ${counterElement} cookies.`
             // buttonElement.remove();
             
-                console.log("this is the counter", counterElement)
+                // console.log("this is the counter", counterElement)
                 cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
                     document.getElementById('bigButton').style.display= 'none';
                 ding.volume = 1
@@ -98,6 +99,11 @@ buttonElement.addEventListener('click', () => {
                 cookieChoiceButtonChoc.textContent = `Chocolate Chip Cookie`
                 document.querySelector(".cookieChoice2").appendChild(cookieChoiceButtonChoc)
 
+                const cookieChoiceButtonPNut = document.createElement("button")
+                cookieChoiceButtonPNut.textContent = `Peanut Butter`
+                document.querySelector(".cookieChoice3").appendChild(cookieChoiceButtonPNut)
+
+
  
 
 
@@ -110,6 +116,7 @@ buttonElement.addEventListener('click', () => {
                     // mainGridElement.appendChild(buttonElement)
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
+                    cookieChoiceButtonPNut.remove();
                     const sugImage = document.createElement("img");
                     sugImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(sugImage)
@@ -136,6 +143,7 @@ buttonElement.addEventListener('click', () => {
                     choco.play()
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
+                    cookieChoiceButtonPNut.remove();
                     document.getElementById('bigButton').style.display= 'inline-block';
 
                     
@@ -143,6 +151,28 @@ buttonElement.addEventListener('click', () => {
 
                 });   
 
+                cookieChoiceButtonPNut.addEventListener('click', () => {
+                    // mainGridElement.appendChild(buttonElement)
+                    // const appendCookiesElement = document.querySelector(".appendCookies")
+                    const PNutImage = document.createElement("img");
+                    PNutImage.src = "./images/Peanut Resize.png";
+                    document.querySelector(".appendCookies").appendChild(PNutImage)
+                    PNutImage.classList.add(".cookieResize")
+
+                    cookieDisplayElement.textContent = `Peanuts in a Cookie it is, I guess.`
+                    
+
+                    wow.volume = 1
+                    wow.play()
+                    cookieChoiceButtonChoc.remove();
+                    cookieChoiceButtonSug.remove();
+                    cookieChoiceButtonPNut.remove();
+                    document.getElementById('bigButton').style.display= 'inline-block';
+
+                    
+                  
+
+                });   
 
             // counterDisplayElement.textContent = cookieUpdateElement;
             // ding.volume = 1

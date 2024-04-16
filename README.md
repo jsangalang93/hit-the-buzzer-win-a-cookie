@@ -31,6 +31,7 @@ IMAGE CITATION
     cookie image provided by pngtree.com
 chocolate chip image https://www.pngarts.com/explore/113400
 sugar cookie image https://www.pngarts.com/explore/113376
+peanut butter cookie image https://4.bp.blogspot.com/-kFXSyOySnbs/WTgeiO6Y94I/AAAAAAAAC_4/8OuZW_Ua1DsWDLJml9bnbgij5nZ8UtwfQCEw/s1600/The-Best-Peanut-Butter-Cookie_0040_iso1.png
 
 resizing host https://onlinepngtools.com/resize-png
 

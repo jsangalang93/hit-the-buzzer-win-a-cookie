@@ -3,11 +3,11 @@ Unit 1 project
 
 PROJECT DESCRIPTION:
 
-A riveting game of chance where one hits a buzzer and possibly wins a cookie. 
+A riveting game of chance where one hits a buzzer and possibly wins a possibly fresh baked good. 
 
 Press the buzzer and choose either a sugar or chocolate chip cookie. 
 
-Choose wisely! You can only have 9 cookies on your plate! The caveat is you can eat as many as your stomach can handle.
+Choose wisely! You can only have 9 cookies on your plate! The key to contuing to play is eating as many as your stomach can handle to keep below an alotment of 9 cookies by pressing the EAT A COOKIE button.
 
 THE PROCESS OF MAKING HTBWAC
 
@@ -18,7 +18,7 @@ STEP 2: (implementing if else to count down)
 STEP 3: ADDING SOUNDBYTES AND IMAGES: Appended the images throught the DOM using photos uploaded to the GitHub repository. Experimented with an AI art generator that arranged the background used.Sound clips were also added to the repository over URLs and some were edited and converted in Logic Pro.
 
 STEP 4: CLEANING THE MACHINE
-queries and debugging
+cleaning up the functionality of the game and limiting the decision making process without feeling the options were limited was most of the work put into this game. Hiding buttons, appending choices allows the energy to carry on without the user realizing there are dead stops in the game. Media queries were also a huge aspect to make asure everyone can use the app no matter where the user is viewing the page from.
 
 STEP 5: 
 music choices and settings

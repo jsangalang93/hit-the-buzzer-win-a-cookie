@@ -1,29 +1,470 @@
 body {
-    background: black;
+    background-color:black;
     text-align: center;
     color: white;
+    
+}
+
+#bigButton {
+    align-self: center;
+}
+
+.counter {
+    font-family: 'bangers'
+}
+
+/* .cookieButton1 {
+    background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:40px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.cookieButton2 {
+    background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:40px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.cookieButton3 {
+    background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:40px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px;
+} */
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.mediaPlayer {
+    height: 70px;
+    width: 150px;
+    background-color: grey;
+    color:black;
+    font-family: 'bangers';
+    border-radius: 7px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.play {
+    height: 30px;
+    width:55px;
+    font-size: 20px;
+    font-family: 'bangers';
+    margin: 5px;
+}
+
+.pause {
+    height:30px;
+    width: 60px;
+    font-size: 20px;
+    font-family: 'bangers';
+    margin: 5px;
+
+}
+
+.mainGrid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
     font-family: "bangers";
-    color: white;
+    color: yellow;
     font-size: 75px;
     text-align: center;
+    margin: 0 auto;
+    text-shadow: 0px 5px 10px black
+
 }
 
 #cookieDisplay {
     font-family: 'bangers';
     font-size: 40px;
     margin-top: 20px;
+    
 }
 
 a {
     font-family: 'bangers';
 }
 
-button {
+#bigButton {
     background-color: red;
+    font-family: 'bangers';
     height:100px;
     width: 100px;
     border-radius: 50px;
+    margin: 5px;
+
 }
+
+.whatKind {
+    font-family: 'bangers';
+    display: grid;
+    font-size: 35px;
+    color: red;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+#eatCookie {
+background-color: blue;
+    font-family: 'bangers';
+    color: yellow;
+    height:60px;
+    width: 130px;
+    border-radius: 50px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.cookieChoice1 {
+    color: green;
+}
+
+.cookieChoice2 {
+    color: blue;
+}
+
+.cookieChoice3 {
+    color: red;
+}
+
+.counter {
+    font-family: 'bangers';
+    
+}
+
+.cookiePlateGrid {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: dotted; */
+    /* border-color: pink; */
+}
+
+/* .appendCookies {
+    display: grid;
+    position: relative;
+    z-index: 2;
+} */
+
+.appendCookies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    /* border: dotted; */
+    /* border-color: black; */
+    height: 275px;
+    width: 275px;
+    position: absolute;
+    margin-top: 60px;
+    
+
+}
+
+.cookieResize {
+    /* background-color: pink; */
+    display: grid;
+
+    max-height: 275px;
+    width: 275px;
+}
+
+.cookiePlate {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    /* background-color: white; */
+    border-radius: 250px;
+    margin: 0px;
+}
+
+#tooMany {
+    font-family: 'bangers';
+    color: red;
+}
+
+.plateResize {
+    justify-content: center;
+
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+
+    h1 {
+    font-size: 40px;
+    }
+
+    button {
+        height: 60px;
+        width: 60px;
+        font-size: 10px;
+        /* margin: 5px; */
+    }
+    /* .cookiePlateGrid {
+         display: flex;
+        justify-content: center; 
+         height: 325px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+        border: dotted;
+        border-color: pink; */
+    
+    .cookiePlateGrid {
+        display: flex;
+        justify-content: center;
+        height: 325px;
+        width: 325px;
+        /* background-color: white; */
+        border-radius: 280px;
+        margin: 20px;
+        /* border: dotted;
+        border-color: pink; */
+    }
+
+    #eatCookie {
+        background-color: blue;
+        font-family: 'bangers';
+        color: yellow;
+        height:60px;
+        width: 130px;
+        border-radius: 50px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .cookieChoice1 {
+        font-size: 20px;
+        color: green;
+    }
+
+    .cookieChoice2 {
+        font-size: 20px;
+        color: blue;
+    }
+
+    .cookieChoice3 {
+        font-size: 20px;
+        color: red;
+    }
+
+
+    .plateResize {
+        justify-content: center;
+        height: 340px;
+        width: 340px;
+        
+    }
+
+    .cookiePlate {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        /* border: solid;
+        border-color: purple; */
+    }
+
+    .appendCookies {
+        object-fit: cover;
+        width: 220px;
+        /* width: 100%; */
+        height: 230px; 
+        max-height: 100% vph;
+        margin-bottom: 4px;
+        grid-auto-rows: 50px;
+        grid-auto-columns: 5px;
+        /* border: solid; */
+
+        /* border-color: white; */
+    }
+
+    .cookieResize {
+        width:20px;
+        height: 200px;
+    }
+
+    #cookieDisplay {
+        font-family: 'bangers';
+        font-size: 20px;
+        margin: 2px;  
+    }
+
+    .counter {
+        font-size: 20px;
+        color: yellow;
+        font-family: 'bangers';
+
+        
+    }
+
+    .mediaPlayer {
+        height: 70px;
+        width: 150px;
+        background-color: grey;
+        color:black;
+        font-family: 'bangers';
+        border-radius: 7px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .play {
+        height: 30px;
+        width:55px;
+        font-size: 10px;
+        font-family: 'bangers';
+        margin: 5px;
+    }
+    
+    .pause {
+        height:30px;
+        width: 60px;
+        font-size: 10px;
+        font-family: 'bangers';
+        margin: 5px;
+    
+    }
+}
+
+
+
+ @media (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+    button {
+        height: 80px;
+        width: 80px;
+        font-size: 15px;
+         margin: 5px;
+    }
+
+    .cookiePlate {
+        height: 350px;
+        width: 350px;
+    }
+
+    .appendCookies {
+        object-fit: cover;
+        width: 220px;
+        height: 200px; 
+        max-height: 100%vph;
+        margin-bottom: 4px; 
+        grid-auto-rows: 70px;
+        grid-auto-columns: 5 px; 
+            /* width: 100%; */
+        }
+
+    #cookieDisplay {
+        font-family: 'bangers';
+        font-size: 11px;
+        margin: 2px;  
+    }
+    
+    .counter {
+        font-size: 10px;
+        color: yellow;
+        font-family: 'bangers';
+    }
+
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 150px;
+    }
+    
+    #bigButton {
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        margin: 5px;
+        border-radius: 75px;
+    }
+
+    .cookiePlate {
+        height: 500px;
+        width: 500px;
+    }
+
+    .appendCookies {
+        object-fit: cover;
+        width: 320px;
+        max-height: 100%;
+        /* margin-bottom: px; */
+        border-color: white; 
+        }
+
+    #cookieDisplay {
+        font-family: 'bangers';
+        font-size: 25px;
+        margin: 2px;  
+    }
+
+    .appendCookies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        height: 395px;
+        width: 350px;
+        position: absolute;
+        margin-top: 60px;
+        margin-bottom: 60px;
+            /* border: dotted; */
+            /* border-color: black; */
+    }
+
+    .cookieResize {
+        width:60px;
+        height: 200px;
+    }
+
+    #eatCookie {
+        font-family: 'bangers';
+        color: yellow;
+        height:80px;
+        width: 150px;
+        border-radius: 50px;
+        margin-top: 100px;
+        font-size: 35px;
+    }
+    
+    .counter {
+        font-size: 40px;
+        color: yellow;
+        font-family: 'bangers';
+    }
+
+} 
+

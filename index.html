@@ -3,21 +3,67 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <script defer src="app.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
-    <!-- TITLE -->
-    <h1>Hit the Button, win a cookie!</h1>
-    
-    <!-- BIG RED BUTTON -->
-    <button id="bigButton">WILL YOU WIN A COOKIE?</button>
+    <!-- <div class = "background"> -->
+    <div class= "mainGrid">
 
-    <!-- YOU WIN A COOKIE -->
-    <div id="cookieDisplay"></div>
+        <!-- TITLE -->
+        <h1>Hit the Buzzer, win a cookie!</h1>
+        
+        <!-- BIG RED BUTTON -->
+        <!-- <div class = "StartButtonUpTop"> -->
+            <button id= "bigButton">WILL YOU WIN A COOKIE?</button>
+        
+
+        <!-- CLICK SOUND EFFECT -->
+        <Audio></Audio>
+
+        <!-- YOU WIN A COOKIE -->
+        <div id= "cookieDisplay"></div>
+
+        <!-- WHAT KIND OF COOKIE CHOICE -->
+        <div class= "cookieChoices"></div>
+
+        <!-- COOKIE ACCUMULATION -->
+        <div class= "counter"></div>
+
+        <!-- TOO MANY COOKIES PROMPT-->
+        <div id= "tooMany"></div>
+
+        <!-- CHOOSE YOUR COOKIE -->
+        <div class= "whatKind">
+            <!-- COOKIE BUTTON FIELD -->
+            <div class = "cookieChoice1"></div>
+            <div class = "cookieChoice2"></div>
+            <div class = "cookieChoice3"></div>
+        </div>
+        <!-- GRID TO CENTER COOKIE PLATE AND COOKIES -->
+        <div class = "cookiePlateGrid">
+            <!-- SPACE FOR COOKIES -->
+            
+                   <div class= "appendCookies"></div>
+
+            <!-- COOKIE PLATE -->
+            <div class= "cookiePlate"></div>
+        </div>
+
+        <!-- EATING A COOKIE -->
+        <button id= "eatCookie">EAT A COOKIE</button>
+        <!-- BACKGROUND MUSIC -->
+        <div class = "mediaPlayer"> 
+            Background music<br>
+            <button class = "play">ON</button><button class = "pause">OFF</button><br>
+            <!-- <button class = "mute">Mute Sounds</button> -->
+        </div>
+
+    </div>
+    <!-- </div> -->
+
 
 </body>
 </html>

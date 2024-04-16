@@ -43,8 +43,6 @@ backgroundImage.classList.add('background')
 
 let counterElement = 0;
 
-
-
 const functionButton = () => {
     let counterElement = 0;
     counterElement = counterElement + 1

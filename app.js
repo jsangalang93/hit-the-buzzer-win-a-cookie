@@ -7,8 +7,6 @@ const backgroundElement = document.querySelector(".background")
 const CookiePop = document.querySelector(".cookieGrid")
 const eatElement = document.getElementById("eatCookie")
 const mainGridElement = document.querySelector(".mainGrid")
-
-
 const startMusicElement = document.querySelector(".play")
 const pauseMusicElement = document.querySelector(".pause")
 // what kind of cookie do you want
@@ -25,6 +23,14 @@ const azucar = new Audio("sounds/azucar.mp3")
 const wow = new Audio("sounds/wow.mp3")
 const nono = new Audio("sounds/nono.mp3")
 const backgroundMusic = new Audio("sounds/background music.mp3")
+
+// const muteAll = document.querySelector (".mute")
+
+// muteAll.setAttribute('click', () => {
+//     set
+
+// })
+
 
 //PLATE PHOTO 
 const image = document.createElement("img");

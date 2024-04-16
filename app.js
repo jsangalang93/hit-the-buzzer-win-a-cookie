@@ -8,22 +8,23 @@ const CookiePop = document.querySelector(".cookieGrid")
 const eatElement = document.getElementById("eatCookie")
 const mainGridElement = document.querySelector(".mainGrid")
 
+
+const startMusicElement = document.querySelector(".play")
+const pauseMusicElement = document.querySelector(".pause")
 // what kind of cookie do you want
 const whatKindElement = document.querySelector(".whatKind")
-
-// const cookiePlateElement = document.querySelector(".cookiePlate")
-// OUTPUT CONSTANTS
 
 // CONST TO DISPLAY TOO MANY COOKIES PROMPT
 const diabetesElement = document.getElementById("tooMany")
 
-// MEDIA CONSTANTS
+//AUDIO CONSTANTS
 const ding = new Audio("sounds/bell.mp3")
 const munch = new Audio("sounds/munch.mp3")
 const choco =new Audio("sounds/chocolate.mp3")
 const azucar = new Audio("sounds/azucar.mp3")
 const wow = new Audio("sounds/wow.mp3")
 const nono = new Audio("sounds/nono.mp3")
+const backgroundMusic = new Audio("sounds/background music.mp3")
 
 //PLATE PHOTO 
 const image = document.createElement("img");
@@ -34,17 +35,17 @@ image.classList.add("plateResize")
 
 
 
-// //BACKGROUND IMAGE
+//BACKGROUND IMAGE
 const backgroundImage = document.createElement("img");
 backgroundImage.src = "images/background.jpg"
 document.querySelector(".mainGrid").appendChild(backgroundImage)
+
 //adding class to background element, styling
 backgroundImage.classList.add('background')
 
-
-
 let counterElement = 0;
 
+// variable function to refer to
 const functionButton = () => {
     let counterElement = 0;
     counterElement = counterElement + 1
@@ -55,7 +56,7 @@ const functionButton = () => {
 }
 
 
-
+// EAT A COOKIE BUTTON
 eatElement.addEventListener('click', () => {
     
     if (counterElement <= 10 && counterElement >= 1){
@@ -73,33 +74,37 @@ eatElement.addEventListener('click', () => {
     // console.log("this is the cookie button", counterElement);
 });
 
-//output, you win a cookie 
+//MAIN EVENT
 buttonElement.addEventListener('click', () => {
     
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 9){
 
-                const buttonElement = document.getElementById("bigButton")
-
+            const buttonElement = document.getElementById("bigButton")
                 counterElement = counterElement + 1
             const cookieUpdateElement = `you currently have ${counterElement} cookies.`
             // buttonElement.remove();
             
                 // console.log("this is the counter", counterElement)
-                cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
-                    document.getElementById('bigButton').style.display= 'none';
+            cookieDisplayElement.textContent = `Ha-Cha! You win a cookie! What kind of cookie would you like?`
+                // button disappear
+            document.getElementById('bigButton').style.display= 'none';
+                // audio play 
                 ding.volume = 1
                 ding.play()
-                // const CookieChoiceElement = document.querySelector(".cookieChoice")
+
+                // appends sugar cookie button
                 const cookieChoiceButtonSug = document.createElement("cookieButton1")
                 cookieChoiceButtonSug.textContent = `Sugar Cookie`
                 document.querySelector(".cookieChoice1").appendChild(cookieChoiceButtonSug)
                 counterDisplayElement.textContent = cookieUpdateElement;
 
+                //appends chocolate cookie button
                 const cookieChoiceButtonChoc = document.createElement("cookieButton2")
                 cookieChoiceButtonChoc.textContent = `Chocolate Chip Cookie`
                 document.querySelector(".cookieChoice2").appendChild(cookieChoiceButtonChoc)
 
+                // appends peanut butter button
                 const cookieChoiceButtonPNut = document.createElement("cookieButton3")
                 cookieChoiceButtonPNut.textContent = `Peanut Butter`
                 document.querySelector(".cookieChoice3").appendChild(cookieChoiceButtonPNut)
@@ -107,31 +112,32 @@ buttonElement.addEventListener('click', () => {
 
  
 
-
+                // addEventListener for Sugar Cookie
                 cookieChoiceButtonSug.addEventListener('click', () => {
                     
                     cookieDisplayElement.textContent = `Sugar Cookie it is!`
                     
                     azucar.volume = 1
                     azucar.play()
-                    // mainGridElement.appendChild(buttonElement)
+                    
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
                     cookieChoiceButtonPNut.remove();
+
+                    // sugar cookie picture append
                     const sugImage = document.createElement("img");
                     sugImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(sugImage)
                     sugImage.classList.add(".cookieResize")
+
+                    // centers and makes button reappear
                     document.getElementById('bigButton').style.display= 'inline-block';
                     // ^https://codingtipsandtricks.com/blog/how-to-hide-and-show-dom-elements-using-javascript/
 
-                    
- 
                 });
 
                 cookieChoiceButtonChoc.addEventListener('click', () => {
-                    // mainGridElement.appendChild(buttonElement)
-                    // const appendCookiesElement = document.querySelector(".appendCookies")
+                    
                     const chocoImage = document.createElement("img");
                     chocoImage.src = "./images/Chocolate Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
@@ -139,16 +145,12 @@ buttonElement.addEventListener('click', () => {
 
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
                     
-
                     choco.volume = 1
                     choco.play()
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
                     cookieChoiceButtonPNut.remove();
                     document.getElementById('bigButton').style.display= 'inline-block';
-
-                    
-                  
 
                 });   
 
@@ -175,9 +177,6 @@ buttonElement.addEventListener('click', () => {
 
                 });   
 
-            // counterDisplayElement.textContent = cookieUpdateElement;
-            // ding.volume = 1
-            // ding.play()
         }else{
             nono.volume = 1
             nono.play()
@@ -188,5 +187,15 @@ buttonElement.addEventListener('click', () => {
         }
 
 }); 
+
+startMusicElement.addEventListener('click', () => {
+    backgroundMusic.volume = 1
+    backgroundMusic.play()
+    
+})
+
+pauseMusicElement.addEventListener('click', () => {
+    backgroundMusic.pause()
+})
 
 

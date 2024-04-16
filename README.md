@@ -3,12 +3,25 @@ Unit 1 project
 
 PROJECT DESCRIPTION:
 
+A riveting game of chance where one hits a buzzer and possibly wins a cookie. 
+
+Press the buzzer and choose either a sugar or chocolate chip cookie. 
+
+Choose wisely! You can only have 9 cookies on your plate! The caveat is you can eat as many as your stomach can handle.
+
+THE PROCESS OF MAKING HTBWAC
+
 STEP 1: (implementing main frame, assigning constants, creating if else to work counter)
 
 STEP 2: (implementing if else to count down)
 
 STEP 3: (adding sound bytes and images)
 
+STEP 4: CLEANING THE MACHINE
+queries and debugging
+
+STEP 5: 
+music choices and settings
 
 
 IMAGE CITATION
@@ -22,7 +35,13 @@ sugar cookie image https://www.pngarts.com/explore/113376
 resizing host https://onlinepngtools.com/resize-png
 
 SOUND CITATION
-
+    "Azucar" Celia Cruz, Wyclef Jean "Guantanamera", 1997 Columbia Records.
+    "Chocolate" Stephen Hillenburg, Ssn 3 Ep 12a "Chocolate with Nuts" SpongeBob SquarePants, 2002 Viacom.
     mouse click https://freesound.org/people/aphom000/sounds/687107/
     bell https://freesound.org/people/magedu/sounds/395807/
     eating cookie 'eating.aif' https://freesound.org/people/SilverIllusionist/sounds/411170/
+
+
+TYPE FONT
+    'bangers' https://fonts.google.com/specimen/Bangers?query=bangers
+

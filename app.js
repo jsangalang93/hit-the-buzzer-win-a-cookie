@@ -103,6 +103,7 @@ buttonElement.addEventListener('click', () => {
                 const cookieChoiceButtonSug = document.createElement("cookieButton1")
                 cookieChoiceButtonSug.textContent = `Sugar Cookie`
                 document.querySelector(".cookieChoice1").appendChild(cookieChoiceButtonSug)
+
                 counterDisplayElement.textContent = cookieUpdateElement;
 
                 //appends chocolate cookie button
@@ -134,7 +135,7 @@ buttonElement.addEventListener('click', () => {
                     const sugImage = document.createElement("img");
                     sugImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(sugImage)
-                    sugImage.classList.add(".cookieResize")
+                    sugImage.classList.add(".cookieResizeSug")
 
                     // centers and makes button reappear
                     document.getElementById('bigButton').style.display= 'inline-block';
@@ -147,7 +148,7 @@ buttonElement.addEventListener('click', () => {
                     const chocoImage = document.createElement("img");
                     chocoImage.src = "./images/Chocolate Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
-                    chocoImage.classList.add(".cookieResize")
+                    chocoImage.classList.add(".cookieResizeChoc")
 
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
                     
@@ -166,7 +167,7 @@ buttonElement.addEventListener('click', () => {
                     const PNutImage = document.createElement("img");
                     PNutImage.src = "./images/Peanut Resize.png";
                     document.querySelector(".appendCookies").appendChild(PNutImage)
-                    PNutImage.classList.add(".cookieResize")
+                    PNutImage.classList.add(".cookieResizePNut")
 
                     cookieDisplayElement.textContent = `Peanuts in a Cookie it is, I guess.`
                     

@@ -309,10 +309,10 @@ background-color: blue;
         /* border-color: white; */
     }
 
-    .cookieResize {
+    /* .cookieResize {
         width:20px;
         height: 200px;
-    }
+    } */
 
     #cookieDisplay {
         font-family: 'bangers';
@@ -445,10 +445,10 @@ background-color: blue;
             /* border-color: black; */
     }
 
-    .cookieResize {
-        width:60px;
+    /* .cookieResizeSug {
+        width:200px;
         height: 200px;
-    }
+    } */
 
     #eatCookie {
         font-family: 'bangers';

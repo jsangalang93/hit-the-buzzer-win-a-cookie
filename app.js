@@ -135,7 +135,7 @@ buttonElement.addEventListener('click', () => {
                     const sugImage = document.createElement("img");
                     sugImage.src = "./images/Sugar Resize.png";
                     document.querySelector(".appendCookies").appendChild(sugImage)
-                    sugImage.classList.add(".cookieResizeSug")
+                    sugImage.classList.add(".cookieResize")
 
                     // centers and makes button reappear
                     document.getElementById('bigButton').style.display= 'inline-block';
@@ -148,7 +148,7 @@ buttonElement.addEventListener('click', () => {
                     const chocoImage = document.createElement("img");
                     chocoImage.src = "./images/Chocolate Resize.png";
                     document.querySelector(".appendCookies").appendChild(chocoImage)
-                    chocoImage.classList.add(".cookieResizeChoc")
+                    chocoImage.classList.add(".cookieResize")
 
                     cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
                     
@@ -167,7 +167,7 @@ buttonElement.addEventListener('click', () => {
                     const PNutImage = document.createElement("img");
                     PNutImage.src = "./images/Peanut Resize.png";
                     document.querySelector(".appendCookies").appendChild(PNutImage)
-                    PNutImage.classList.add(".cookieResizePNut")
+                    PNutImage.classList.add(".cookieResize")
 
                     cookieDisplayElement.textContent = `Peanuts in a Cookie it is, I guess.`
                     

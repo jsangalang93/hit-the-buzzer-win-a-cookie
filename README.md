@@ -55,8 +55,6 @@ SOUND CITATION
 
     "No No No" Steve Lightfoot, Ssn 1 Ep 6 "The Judas Goat" The Punisher, 2017 Marvel.
 
-    mouse click https://freesound.org/people/aphom000/sounds/687107/
-
     bell https://freesound.org/people/magedu/sounds/395807/
 
     eating cookie 'eating.aif' https://freesound.org/people/SilverIllusionist/sounds/411170/

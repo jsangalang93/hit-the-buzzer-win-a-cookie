@@ -14,7 +14,7 @@
 
 // // CONST TO DISPLAY TOO MANY COOKIES PROMPT
 // const diabetesElement = document.getElementById("tooMany")
-
+$(document).ready(function() {
 const buttonElement = $("#bigButton")
 const cookieDisplayElement = $("#cookieDisplay")
 const counterDisplayElement = $(".counter")
@@ -27,7 +27,7 @@ const pauseMusicElement = $(".pause")
 // what kind of cookie do you want
 const whatKindElement = $(".whatKind")
 const appendCookiesElement = $(".appendCookies")
-const cookieChoiceButtonSug = $("#cookieButton1")
+const cookieButton1 = $("#cookieButton1")
 
 // CONST TO DISPLAY TOO MANY COOKIES PROMPT
 const diabetesElement = $("#tooMany")
@@ -88,7 +88,8 @@ const functionButton = () => {
     counterElement = counterElement + 1
     // cookieDisplayElement.textContent = winCookieElement;
             counterDisplayElement.text(cookieUpdateElement);
-            ding.prop('volume', 1).get(0).play();
+            ding.volume = 1
+            ding.play()
 }
 
 // EAT A COOKIE BUTTON
@@ -117,10 +118,12 @@ $(eatElement).on('click', function() {
         $('#cookieDisplayElement').text(`mmmmm Hope you enjoyed!`)
         $('#counterDisplayElement').text(cookieUpdateElement);
 
-        const appendCookiesElement = $(".appendCookies");
+        // const appendCookiesElement = $(".appendCookies");
         $('appendCookiesElement').children().first().remove();
         $('diabetesElement').text('');
-        $(munch).prop('volume', 1).trigger('play');
+         
+                munch.volume = 1
+                munch.play()
     }
     // console.log("this is the cookie button", counterElement);
 });
@@ -131,8 +134,7 @@ $(buttonElement).on('click', function() {
     
     // counterDisplayElement.textContent = cookieUpdateElement;
         if(counterElement < 9){
-            console.log ('this works')
-            const buttonElement = $("#bigButton")
+            // const buttonElement = $("#bigButton")
                 counterElement = counterElement + 1
             const cookieUpdateElement = `you currently have ${counterElement} cookies.`
             // buttonElement.remove();
@@ -143,33 +145,46 @@ $(buttonElement).on('click', function() {
                 // button disappear
             bigButton.style.display= 'none';
                 // audio play 
-                // ding.volume = 1
-                // ding.play()
+                ding.volume = 1
+                ding.play()
 
                 // appends sugar cookie button
-                const cookieChoiceButtonSug = $("cookieButton1")
-                cookieChoiceButtonSug.text(`Sugar Cookie`)
-                $(".cookieChoice1").append(cookieChoiceButtonSug)
+                // const cookieChoiceButtonSug = cookieButton1;
+                // cookieChoiceButtonSug.text(`Sugar Cookie`);
+                // $(".cookieChoice1").append(cookieChoiceButtonSug);
 
-                counterDisplayElement.text(cookieUpdateElement);
+                // counterDisplayElement.text(cookieUpdateElement);
+
+                const cookieChoiceButtonSug = $("<button></button>", {
+                    text: "Sugar Cookie",
+                    id: "cookieButton1"
+                  });
+                  $(".cookieChoice1").append(cookieChoiceButtonSug);
+                  
+                  counterDisplayElement.text(cookieUpdateElement);
 
                 //appends chocolate cookie button
                 // const cookieChoiceButtonChoc = document.createElement("cookieButton2")
                 // cookieChoiceButtonChoc.textContent = `Chocolate Chip Cookie`
                 // document.querySelector(".cookieChoice2").appendChild(cookieChoiceButtonChoc)
 
-                const cookieChoiceButtonChoc = $("cookieButton2")
-                cookieChoiceButtonChoc.text(`Chocolate Chip Cookie`)
-                $(".cookieChoice2").append(cookieChoiceButtonChoc)
+                const cookieChoiceButtonChoc = $('<button></button>', {
+                    text: (`Chocolate Chip Cookie`),
+                    id: 'cookieButton2'
+                });
+                    $(".cookieChoice2").append(cookieChoiceButtonChoc);
 
                 // appends peanut butter button
                 // const cookieChoiceButtonPNut = document.createElement("cookieButton3")
                 // cookieChoiceButtonPNut.textContent = `Peanut Butter`
                 // document.querySelector(".cookieChoice3").appendChild(cookieChoiceButtonPNut)
 
-                const cookieChoiceButtonPNut = $("cookieButton3")
-                cookieChoiceButtonPNut.text(`Peanut Butter`)
-                $(".cookieChoice3").append(cookieChoiceButtonPNut)
+                const cookieChoiceButtonPNut = $('<button></button>', {
+                    text: (`Peanut Butter`),
+                    id: 'cookieButton3'
+                });
+                cookieChoiceButtonPNut.text(`Peanut Butter`);
+                $(".cookieChoice3").append(cookieChoiceButtonPNut);
 
 
  
@@ -192,16 +207,17 @@ $(buttonElement).on('click', function() {
                     // document.querySelector(".appendCookies").appendChild(sugImage)
                     // sugImage.classList.add(".cookieResize")
 
-                    const sugImage = $("img");
-                    sugImage.src = "./images/Sugar Resize.png";
-                    appendCookiesElement.append(sugImage)
-                    sugImage.classList.add(".cookieResize")
+                    const sugImage = $("<img/>").attr("src", "./images/Sugar Resize.png");
+                    
+                    appendCookiesElement.append(sugImage);
+                    sugImage.addClass(".cookieResize");
+                    cookieDisplayElement.textContent = `Sugar Cookie it is!`;
 
                     // centers and makes button reappear
                     // document.getElementById('bigButton').style.display= 'inline-block';
                     // ^https://codingtipsandtricks.com/blog/how-to-hide-and-show-dom-elements-using-javascript/
 
-                    $('#bigButton').style.display= 'inline-block';
+                    $('#bigButton').css('display', 'inline-block');
                     // ^https://codingtipsandtricks.com/blog/how-to-hide-and-show-dom-elements-using-javascript/
 
                 
@@ -215,15 +231,15 @@ $(buttonElement).on('click', function() {
                     // document.querySelector(".appendCookies").appendChild(chocoImage)
                     // chocoImage.classList.add(".cookieResize")
 
-                    const chocoImage = $("img");
-                    chocoImage.src = "./images/Chocolate Resize.png";
-                    appendCookiesElement.append(chocoImage)
-                    chocoImage.classList.add(".cookieResize")
-
-                    cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`
+                    const chocoImage = $("<img/>").attr("src", "./images/Chocolate Resize.png");
                     
-                //     choco.volume = 1
-                //     choco.play()
+                    appendCookiesElement.append(chocoImage);
+                    chocoImage.addClass(".cookieResize");
+
+                    cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`;
+                    
+                    // choco.volume = 1
+                    // choco.play()
                 //     cookieChoiceButtonChoc.remove();
                 //     cookieChoiceButtonSug.remove();
                 //     cookieChoiceButtonPNut.remove();
@@ -236,7 +252,7 @@ $(buttonElement).on('click', function() {
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
                     cookieChoiceButtonPNut.remove();
-                    $('bigButton').style.display= 'inline-block';
+                    $('#bigButton').css('display', 'inline-block');
 
                 });  
 
@@ -253,10 +269,9 @@ $(buttonElement).on('click', function() {
                 cookieChoiceButtonPNut.on('click', () => {
                     // mainGridElement.appendChild(buttonElement)
                     // const appendCookiesElement = document.querySelector(".appendCookies")
-                    const PNutImage = $("img");
-                    PNutImage.src = "./images/Peanut Resize.png";
-                    appendCookiesElement.append(PNutImage)
-                    PNutImage.classList.add(".cookieResize")
+                    const PNutImage = $("<img/>").attr("src", "./images/Peanut Resize.png");
+                    appendCookiesElement.append(PNutImage);
+                    PNutImage.addClass(".cookieResize");
 
                     cookieDisplayElement.textContent = `Peanuts in a Cookie it is, I guess.`
                     
@@ -273,10 +288,7 @@ $(buttonElement).on('click', function() {
                     cookieChoiceButtonChoc.remove();
                     cookieChoiceButtonSug.remove();
                     cookieChoiceButtonPNut.remove();
-                    $('bigButton').style.display= 'inline-block';
-
-                    
-                  
+                    $('#bigButton').css('display', 'inline-block');
 
                 });   
 
@@ -304,5 +316,5 @@ $(startMusicElement).on('click', () => {
 $(pauseMusicElement).on('click', () => {
     backgroundMusic.pause()
 })
-
+});
 

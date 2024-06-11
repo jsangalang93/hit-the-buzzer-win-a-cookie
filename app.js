@@ -114,13 +114,13 @@ $(eatElement).on('click', function() {
     
     if (counterElement <= 10 && counterElement >= 1){
         counterElement -= 1;
-        const cookieUpdateElement = (`you currently have ${counterElement} cookies.`);
-        $('#cookieDisplayElement').text(`mmmmm Hope you enjoyed!`)
+        const cookieUpdateElement = `you currently have ${counterElement} cookies.`;
+        $('#cookieDisplayElement').text(`mmmmm Hope you enjoyed!`);
         $('#counterDisplayElement').text(cookieUpdateElement);
 
         // const appendCookiesElement = $(".appendCookies");
-        $('appendCookiesElement').children().first().remove();
-        $('diabetesElement').text('');
+        $(appendCookiesElement).children().first().remove();
+        $(diabetesElement).text('');
          
                 munch.volume = 1
                 munch.play()
@@ -211,7 +211,7 @@ $(buttonElement).on('click', function() {
                     
                     appendCookiesElement.append(sugImage);
                     sugImage.addClass(".cookieResize");
-                    cookieDisplayElement.textContent = `Sugar Cookie it is!`;
+                    $(cookieDisplayElement).text(`Sugar Cookie it is!`);
 
                     // centers and makes button reappear
                     // document.getElementById('bigButton').style.display= 'inline-block';
@@ -236,7 +236,7 @@ $(buttonElement).on('click', function() {
                     appendCookiesElement.append(chocoImage);
                     chocoImage.addClass(".cookieResize");
 
-                    cookieDisplayElement.textContent = `Chocolate Chip Cookie it is!`;
+                    $(cookieDisplayElement).text(`Chocolate Chip Cookie it is!`);
                     
                     // choco.volume = 1
                     // choco.play()
@@ -273,7 +273,7 @@ $(buttonElement).on('click', function() {
                     appendCookiesElement.append(PNutImage);
                     PNutImage.addClass(".cookieResize");
 
-                    cookieDisplayElement.textContent = `Peanuts in a Cookie it is, I guess.`
+                    $(cookieDisplayElement).text(`Peanuts in a Cookie it is, I guess.`);
                     
 
                     // wow.volume = 1
